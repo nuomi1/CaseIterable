@@ -290,12 +290,9 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CaseIterable_Example/Pods-CaseIterable_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CaseIterable/CaseIterable.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CaseIterable.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
