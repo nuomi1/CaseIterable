@@ -1,0 +1,16 @@
+PODS:
+  - CaseIterable (0.1.0)
+
+DEPENDENCIES:
+  - CaseIterable (from `../`)
+
+EXTERNAL SOURCES:
+  CaseIterable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CaseIterable: 81d52fa8889345c568a86c180a553a09e790dae2
+
+PODFILE CHECKSUM: 6c9fdc01e36be2ccaceb9ee0fd689e71bfd1aaa1
+
+COCOAPODS: 1.7.5

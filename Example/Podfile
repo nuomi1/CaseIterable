@@ -1,11 +1,14 @@
+install! "cocoapods",
+         disable_input_output_paths: true
+
 use_frameworks!
 
-target 'CaseIterable_Example' do
-  pod 'CaseIterable', :path => '../'
+platform :ios, "8.0"
 
-  target 'CaseIterable_Tests' do
+target "CaseIterable_Example" do
+  pod "CaseIterable", :path => "../"
+
+  target "CaseIterable_Tests" do
     inherit! :search_paths
-
-    
   end
 end
