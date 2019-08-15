@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIFont {
-    public enum FontName: String, CaseIterable {
+    public enum SystemFontName: String, CaseIterable {
 
         // MARK: Academy Engraved LET
 
@@ -514,7 +514,7 @@ extension UIFont {
 }
 
 extension UIFont {
-    public convenience init?(fontName: UIFont.FontName, size: CGFloat) {
+    public convenience init?(fontName: UIFont.SystemFontName, size: CGFloat) {
         self.init(name: fontName.rawValue, size: size)
     }
 }

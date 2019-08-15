@@ -5,7 +5,7 @@
 //  Created by nuomi1 on 27/7/2019.
 //
 %{
-uifont_familyname_fontnames = [
+uifont_familynames_fontnames = [
     ('Academy Engraved LET', [
         'AcademyEngravedLetPlain',
     ]),
@@ -438,7 +438,6 @@ uifont_familyname_fontnames = [
     ]),
 ]
 
-
 def convert(one_string):
     new_string = one_string.replace('-', '')
     new_string = one_string[0].lower() + new_string[1:]
@@ -448,12 +447,12 @@ def convert(one_string):
 import UIKit
 
 extension UIFont {
-    public enum FontName: String, CaseIterable {
-% for font in uifont_familyname_fontnames:
+    public enum SystemFontName: String, CaseIterable {
+% for pair in uifont_familynames_fontnames:
 
-        // MARK: ${font[0]}
+        // MARK: ${pair[0]}
 
-%   for fontname in font[1]:
+%   for fontname in pair[1]:
         case ${convert(fontname)} = "${fontname}"
 %   end
 % end
@@ -461,7 +460,7 @@ extension UIFont {
 }
 
 extension UIFont {
-    public convenience init?(fontName: UIFont.FontName, size: CGFloat) {
+    public convenience init?(fontName: UIFont.SystemFontName, size: CGFloat) {
         self.init(name: fontName.rawValue, size: size)
     }
 }
