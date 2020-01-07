@@ -53,6 +53,7 @@ xcuserdata
 DerivedData/
 *.xcodeproj
 
+
 ### Xcode ###
 # Xcode
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -76,12 +77,18 @@ build/
 *.perspectivev3
 !default.perspectivev3
 
-### Xcode Patch ###
+## Xcode Patch
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
+
+### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.gitignore.io/api/carthage,cocoapods,macos,swiftpackagemanager,xcode
+
+### XcodeGen ###
+*.xcodeproj
+*.xcworkspace
