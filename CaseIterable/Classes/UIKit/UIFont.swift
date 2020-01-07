@@ -7,8 +7,13 @@
 
 import UIKit
 
+// swiftlint:disable file_length
+
 extension UIFont {
-    public enum SystemFontName: String, CaseIterable {
+
+    // swiftlint:disable type_body_length
+
+    public enum SystemName: String, CaseIterable {
 
         // MARK: Academy Engraved LET
 
@@ -42,6 +47,10 @@ extension UIFont {
         case appleSDGothicNeoSemiBold = "AppleSDGothicNeo-SemiBold"
         case appleSDGothicNeoUltraLight = "AppleSDGothicNeo-UltraLight"
         case appleSDGothicNeoMedium = "AppleSDGothicNeo-Medium"
+
+        // MARK: Apple Symbols
+
+        case appleSymbols = "AppleSymbols"
 
         // MARK: Arial
 
@@ -229,6 +238,11 @@ extension UIFont {
         case futuraCondensedMedium = "Futura-CondensedMedium"
         case futuraMediumItalic = "Futura-MediumItalic"
 
+        // MARK: Galvji
+
+        case galvjiBold = "Galvji-Bold"
+        case galvji = "Galvji"
+
         // MARK: Geeza Pro
 
         case geezaProBold = "GeezaPro-Bold"
@@ -252,16 +266,6 @@ extension UIFont {
         case gillSansSemiBoldItalic = "GillSans-SemiBoldItalic"
         case gillSansBoldItalic = "GillSans-BoldItalic"
         case gillSansLightItalic = "GillSans-LightItalic"
-
-        // MARK: Gujarati Sangam MN
-
-        case gujaratiSangamMN = "GujaratiSangamMN"
-        case gujaratiSangamMNBold = "GujaratiSangamMN-Bold"
-
-        // MARK: Gurmukhi MN
-
-        case gurmukhiMNBold = "GurmukhiMN-Bold"
-        case gurmukhiMN = "GurmukhiMN"
 
         // MARK: Helvetica
 
@@ -302,6 +306,7 @@ extension UIFont {
 
         case hiraginoSansW3 = "HiraginoSans-W3"
         case hiraginoSansW6 = "HiraginoSans-W6"
+        case hiraginoSansW7 = "HiraginoSans-W7"
 
         // MARK: Hoefler Text
 
@@ -314,11 +319,6 @@ extension UIFont {
 
         case kailasaBold = "Kailasa-Bold"
         case kailasa = "Kailasa"
-
-        // MARK: Kannada Sangam MN
-
-        case kannadaSangamMNBold = "KannadaSangamMN-Bold"
-        case kannadaSangamMN = "KannadaSangamMN"
 
         // MARK: Kefa
 
@@ -339,6 +339,12 @@ extension UIFont {
         case kohinoorDevanagariRegular = "KohinoorDevanagari-Regular"
         case kohinoorDevanagariLight = "KohinoorDevanagari-Light"
         case kohinoorDevanagariSemibold = "KohinoorDevanagari-Semibold"
+
+        // MARK: Kohinoor Gujarati
+
+        case kohinoorGujaratiLight = "KohinoorGujarati-Light"
+        case kohinoorGujaratiBold = "KohinoorGujarati-Bold"
+        case kohinoorGujaratiRegular = "KohinoorGujarati-Regular"
 
         // MARK: Kohinoor Telugu
 
@@ -371,6 +377,12 @@ extension UIFont {
 
         case diwanMishafi = "DiwanMishafi"
 
+        // MARK: Mukta Mahee
+
+        case muktaMaheeLight = "MuktaMahee-Light"
+        case muktaMaheeBold = "MuktaMahee-Bold"
+        case muktaMaheeRegular = "MuktaMahee-Regular"
+
         // MARK: Myanmar Sangam MN
 
         case myanmarSangamMN = "MyanmarSangamMN"
@@ -384,10 +396,24 @@ extension UIFont {
         // MARK: Noto Nastaliq Urdu
 
         case notoNastaliqUrdu = "NotoNastaliqUrdu"
+        case notoNastaliqUrduBold = "NotoNastaliqUrdu-Bold"
 
-        // MARK: Noto Sans Chakma
+        // MARK: Noto Sans Kannada
 
-        case notoSansChakmaRegular = "NotoSansChakma-Regular"
+        case notoSansKannadaBold = "NotoSansKannada-Bold"
+        case notoSansKannadaLight = "NotoSansKannada-Light"
+        case notoSansKannadaRegular = "NotoSansKannada-Regular"
+
+        // MARK: Noto Sans Myanmar
+
+        case notoSansMyanmarRegular = "NotoSansMyanmar-Regular"
+        case notoSansMyanmarBold = "NotoSansMyanmar-Bold"
+        case notoSansMyanmarLight = "NotoSansMyanmar-Light"
+
+        // MARK: Noto Sans Oriya
+
+        case notoSansOriyaBold = "NotoSansOriya-Bold"
+        case notoSansOriya = "NotoSansOriya"
 
         // MARK: Optima
 
@@ -396,11 +422,6 @@ extension UIFont {
         case optimaItalic = "Optima-Italic"
         case optimaRegular = "Optima-Regular"
         case optimaBold = "Optima-Bold"
-
-        // MARK: Oriya Sangam MN
-
-        case oriyaSangamMN = "OriyaSangamMN"
-        case oriyaSangamMNBold = "OriyaSangamMN-Bold"
 
         // MARK: Palatino
 
@@ -511,10 +532,13 @@ extension UIFont {
 
         case zapfino = "Zapfino"
     }
+
+    // swiftlint:enable type_body_length
 }
 
 extension UIFont {
-    public convenience init?(fontName: UIFont.SystemFontName, size: CGFloat) {
-        self.init(name: fontName.rawValue, size: size)
+
+    public convenience init?(systemName: UIFont.SystemName, size: CGFloat) {
+        self.init(name: systemName.rawValue, size: size)
     }
 }

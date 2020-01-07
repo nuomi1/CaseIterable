@@ -1,5 +1,5 @@
 PODS:
-  - CaseIterable (0.1.0)
+  - CaseIterable (0.2.1)
 
 DEPENDENCIES:
   - CaseIterable (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CaseIterable: 81d52fa8889345c568a86c180a553a09e790dae2
+  CaseIterable: 140dea8ee91157f34bfb275052fe9f40dde59678
 
-PODFILE CHECKSUM: 6c9fdc01e36be2ccaceb9ee0fd689e71bfd1aaa1
+PODFILE CHECKSUM: c370acb5622dd02b6c145f0fd6c6e911eb2e6b33
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

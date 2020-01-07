@@ -1,0 +1,9 @@
+--disable blankLinesAtStartOfScope
+
+--exclude Example/Pods
+
+--stripunusedargs closure-only
+--swiftversion 5.0
+
+--wraparguments before-first
+--wrapcollections before-first

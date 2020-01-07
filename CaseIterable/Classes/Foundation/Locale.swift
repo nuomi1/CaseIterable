@@ -7,7 +7,12 @@
 
 import Foundation
 
+// swiftlint:disable file_length
+
 public extension Locale {
+
+    // swiftlint:disable identifier_name
+
     static let af = Locale(identifier: "af")
     static let af_NA = Locale(identifier: "af_NA")
     static let af_ZA = Locale(identifier: "af_ZA")
@@ -46,6 +51,8 @@ public extension Locale {
     static let ar_TD = Locale(identifier: "ar_TD")
     static let ar_TN = Locale(identifier: "ar_TN")
     static let ar_YE = Locale(identifier: "ar_YE")
+    static let arn = Locale(identifier: "arn")
+    static let arn_CL = Locale(identifier: "arn_CL")
     static let `as` = Locale(identifier: "as")
     static let as_IN = Locale(identifier: "as_IN")
     static let asa = Locale(identifier: "asa")
@@ -57,6 +64,8 @@ public extension Locale {
     static let az_Cyrl_AZ = Locale(identifier: "az_Cyrl_AZ")
     static let az_Latn = Locale(identifier: "az_Latn")
     static let az_Latn_AZ = Locale(identifier: "az_Latn_AZ")
+    static let ba = Locale(identifier: "ba")
+    static let ba_RU = Locale(identifier: "ba_RU")
     static let bas = Locale(identifier: "bas")
     static let bas_CM = Locale(identifier: "bas_CM")
     static let be = Locale(identifier: "be")
@@ -84,6 +93,8 @@ public extension Locale {
     static let bs_Cyrl_BA = Locale(identifier: "bs_Cyrl_BA")
     static let bs_Latn = Locale(identifier: "bs_Latn")
     static let bs_Latn_BA = Locale(identifier: "bs_Latn_BA")
+    static let byn = Locale(identifier: "byn")
+    static let byn_ER = Locale(identifier: "byn_ER")
     static let ca = Locale(identifier: "ca")
     static let ca_AD = Locale(identifier: "ca_AD")
     static let ca_ES = Locale(identifier: "ca_ES")
@@ -94,6 +105,8 @@ public extension Locale {
     static let ccp_IN = Locale(identifier: "ccp_IN")
     static let ce = Locale(identifier: "ce")
     static let ce_RU = Locale(identifier: "ce_RU")
+    static let ceb = Locale(identifier: "ceb")
+    static let ceb_PH = Locale(identifier: "ceb_PH")
     static let cgg = Locale(identifier: "cgg")
     static let cgg_UG = Locale(identifier: "cgg_UG")
     static let chr = Locale(identifier: "chr")
@@ -101,8 +114,12 @@ public extension Locale {
     static let ckb = Locale(identifier: "ckb")
     static let ckb_IQ = Locale(identifier: "ckb_IQ")
     static let ckb_IR = Locale(identifier: "ckb_IR")
+    static let co = Locale(identifier: "co")
+    static let co_FR = Locale(identifier: "co_FR")
     static let cs = Locale(identifier: "cs")
     static let cs_CZ = Locale(identifier: "cs_CZ")
+    static let cv = Locale(identifier: "cv")
+    static let cv_RU = Locale(identifier: "cv_RU")
     static let cy = Locale(identifier: "cy")
     static let cy_GB = Locale(identifier: "cy_GB")
     static let da = Locale(identifier: "da")
@@ -124,6 +141,8 @@ public extension Locale {
     static let dsb_DE = Locale(identifier: "dsb_DE")
     static let dua = Locale(identifier: "dua")
     static let dua_CM = Locale(identifier: "dua_CM")
+    static let dv = Locale(identifier: "dv")
+    static let dv_MV = Locale(identifier: "dv_MV")
     static let dyo = Locale(identifier: "dyo")
     static let dyo_SN = Locale(identifier: "dyo_SN")
     static let dz = Locale(identifier: "dz")
@@ -140,6 +159,7 @@ public extension Locale {
     static let en_001 = Locale(identifier: "en_001")
     static let en_150 = Locale(identifier: "en_150")
     static let en_AD = Locale(identifier: "en_AD")
+    static let en_AE = Locale(identifier: "en_AE")
     static let en_AG = Locale(identifier: "en_AG")
     static let en_AI = Locale(identifier: "en_AI")
     static let en_AL = Locale(identifier: "en_AL")
@@ -162,8 +182,10 @@ public extension Locale {
     static let en_CC = Locale(identifier: "en_CC")
     static let en_CH = Locale(identifier: "en_CH")
     static let en_CK = Locale(identifier: "en_CK")
+    static let en_CL = Locale(identifier: "en_CL")
     static let en_CM = Locale(identifier: "en_CM")
     static let en_CN = Locale(identifier: "en_CN")
+    static let en_CO = Locale(identifier: "en_CO")
     static let en_CX = Locale(identifier: "en_CX")
     static let en_CY = Locale(identifier: "en_CY")
     static let en_CZ = Locale(identifier: "en_CZ")
@@ -216,6 +238,7 @@ public extension Locale {
     static let en_ME = Locale(identifier: "en_ME")
     static let en_MG = Locale(identifier: "en_MG")
     static let en_MH = Locale(identifier: "en_MH")
+    static let en_MM = Locale(identifier: "en_MM")
     static let en_MO = Locale(identifier: "en_MO")
     static let en_MP = Locale(identifier: "en_MP")
     static let en_MS = Locale(identifier: "en_MS")
@@ -223,6 +246,7 @@ public extension Locale {
     static let en_MU = Locale(identifier: "en_MU")
     static let en_MV = Locale(identifier: "en_MV")
     static let en_MW = Locale(identifier: "en_MW")
+    static let en_MX = Locale(identifier: "en_MX")
     static let en_MY = Locale(identifier: "en_MY")
     static let en_NA = Locale(identifier: "en_NA")
     static let en_NF = Locale(identifier: "en_NF")
@@ -241,6 +265,7 @@ public extension Locale {
     static let en_PT = Locale(identifier: "en_PT")
     static let en_PW = Locale(identifier: "en_PW")
     static let en_RO = Locale(identifier: "en_RO")
+    static let en_RS = Locale(identifier: "en_RS")
     static let en_RU = Locale(identifier: "en_RU")
     static let en_RW = Locale(identifier: "en_RW")
     static let en_SA = Locale(identifier: "en_SA")
@@ -265,6 +290,7 @@ public extension Locale {
     static let en_TV = Locale(identifier: "en_TV")
     static let en_TW = Locale(identifier: "en_TW")
     static let en_TZ = Locale(identifier: "en_TZ")
+    static let en_UA = Locale(identifier: "en_UA")
     static let en_UG = Locale(identifier: "en_UG")
     static let en_UM = Locale(identifier: "en_UM")
     static let en_US = Locale(identifier: "en_US")
@@ -278,6 +304,7 @@ public extension Locale {
     static let en_ZM = Locale(identifier: "en_ZM")
     static let en_ZW = Locale(identifier: "en_ZW")
     static let eo = Locale(identifier: "eo")
+    static let eo_001 = Locale(identifier: "eo_001")
     static let es = Locale(identifier: "es")
     static let es_419 = Locale(identifier: "es_419")
     static let es_AG = Locale(identifier: "es_AG")
@@ -349,10 +376,19 @@ public extension Locale {
     static let fa_AF = Locale(identifier: "fa_AF")
     static let fa_IR = Locale(identifier: "fa_IR")
     static let ff = Locale(identifier: "ff")
-    static let ff_CM = Locale(identifier: "ff_CM")
-    static let ff_GN = Locale(identifier: "ff_GN")
-    static let ff_MR = Locale(identifier: "ff_MR")
-    static let ff_SN = Locale(identifier: "ff_SN")
+    static let ff_Latn = Locale(identifier: "ff_Latn")
+    static let ff_Latn_BF = Locale(identifier: "ff_Latn_BF")
+    static let ff_Latn_CM = Locale(identifier: "ff_Latn_CM")
+    static let ff_Latn_GH = Locale(identifier: "ff_Latn_GH")
+    static let ff_Latn_GM = Locale(identifier: "ff_Latn_GM")
+    static let ff_Latn_GN = Locale(identifier: "ff_Latn_GN")
+    static let ff_Latn_GW = Locale(identifier: "ff_Latn_GW")
+    static let ff_Latn_LR = Locale(identifier: "ff_Latn_LR")
+    static let ff_Latn_MR = Locale(identifier: "ff_Latn_MR")
+    static let ff_Latn_NE = Locale(identifier: "ff_Latn_NE")
+    static let ff_Latn_NG = Locale(identifier: "ff_Latn_NG")
+    static let ff_Latn_SL = Locale(identifier: "ff_Latn_SL")
+    static let ff_Latn_SN = Locale(identifier: "ff_Latn_SN")
     static let fi = Locale(identifier: "fi")
     static let fi_FI = Locale(identifier: "fi_FI")
     static let fil = Locale(identifier: "fil")
@@ -413,10 +449,17 @@ public extension Locale {
     static let fy_NL = Locale(identifier: "fy_NL")
     static let ga = Locale(identifier: "ga")
     static let ga_IE = Locale(identifier: "ga_IE")
+    static let gaa = Locale(identifier: "gaa")
+    static let gaa_GH = Locale(identifier: "gaa_GH")
     static let gd = Locale(identifier: "gd")
     static let gd_GB = Locale(identifier: "gd_GB")
+    static let gez = Locale(identifier: "gez")
+    static let gez_ER = Locale(identifier: "gez_ER")
+    static let gez_ET = Locale(identifier: "gez_ET")
     static let gl = Locale(identifier: "gl")
     static let gl_ES = Locale(identifier: "gl_ES")
+    static let gn = Locale(identifier: "gn")
+    static let gn_PY = Locale(identifier: "gn_PY")
     static let gsw = Locale(identifier: "gsw")
     static let gsw_CH = Locale(identifier: "gsw_CH")
     static let gsw_FR = Locale(identifier: "gsw_FR")
@@ -437,6 +480,7 @@ public extension Locale {
     static let he_IL = Locale(identifier: "he_IL")
     static let hi = Locale(identifier: "hi")
     static let hi_IN = Locale(identifier: "hi_IN")
+    static let hi_Latn = Locale(identifier: "hi_Latn")
     static let hr = Locale(identifier: "hr")
     static let hr_BA = Locale(identifier: "hr_BA")
     static let hr_HR = Locale(identifier: "hr_HR")
@@ -446,12 +490,16 @@ public extension Locale {
     static let hu_HU = Locale(identifier: "hu_HU")
     static let hy = Locale(identifier: "hy")
     static let hy_AM = Locale(identifier: "hy_AM")
+    static let ia = Locale(identifier: "ia")
+    static let ia_001 = Locale(identifier: "ia_001")
     static let id = Locale(identifier: "id")
     static let id_ID = Locale(identifier: "id_ID")
     static let ig = Locale(identifier: "ig")
     static let ig_NG = Locale(identifier: "ig_NG")
     static let ii = Locale(identifier: "ii")
     static let ii_CN = Locale(identifier: "ii_CN")
+    static let io = Locale(identifier: "io")
+    static let io_001 = Locale(identifier: "io_001")
     static let `is` = Locale(identifier: "is")
     static let is_IS = Locale(identifier: "is_IS")
     static let it = Locale(identifier: "it")
@@ -463,16 +511,24 @@ public extension Locale {
     static let iu_CA = Locale(identifier: "iu_CA")
     static let ja = Locale(identifier: "ja")
     static let ja_JP = Locale(identifier: "ja_JP")
+    static let jbo = Locale(identifier: "jbo")
+    static let jbo_001 = Locale(identifier: "jbo_001")
     static let jgo = Locale(identifier: "jgo")
     static let jgo_CM = Locale(identifier: "jgo_CM")
     static let jmc = Locale(identifier: "jmc")
     static let jmc_TZ = Locale(identifier: "jmc_TZ")
+    static let jv = Locale(identifier: "jv")
+    static let jv_ID = Locale(identifier: "jv_ID")
     static let ka = Locale(identifier: "ka")
     static let ka_GE = Locale(identifier: "ka_GE")
     static let kab = Locale(identifier: "kab")
     static let kab_DZ = Locale(identifier: "kab_DZ")
+    static let kaj = Locale(identifier: "kaj")
+    static let kaj_NG = Locale(identifier: "kaj_NG")
     static let kam = Locale(identifier: "kam")
     static let kam_KE = Locale(identifier: "kam_KE")
+    static let kcg = Locale(identifier: "kcg")
+    static let kcg_NG = Locale(identifier: "kcg_NG")
     static let kde = Locale(identifier: "kde")
     static let kde_TZ = Locale(identifier: "kde_TZ")
     static let kea = Locale(identifier: "kea")
@@ -498,7 +554,15 @@ public extension Locale {
     static let ko_KR = Locale(identifier: "ko_KR")
     static let kok = Locale(identifier: "kok")
     static let kok_IN = Locale(identifier: "kok_IN")
+    static let kpe = Locale(identifier: "kpe")
+    static let kpe_GN = Locale(identifier: "kpe_GN")
+    static let kpe_LR = Locale(identifier: "kpe_LR")
     static let ks = Locale(identifier: "ks")
+    static let ks_Arab = Locale(identifier: "ks_Arab")
+    static let ks_Arab_IN = Locale(identifier: "ks_Arab_IN")
+    static let ks_Aran = Locale(identifier: "ks_Aran")
+    static let ks_Aran_IN = Locale(identifier: "ks_Aran_IN")
+    static let ks_Deva = Locale(identifier: "ks_Deva")
     static let ks_IN = Locale(identifier: "ks_IN")
     static let ksb = Locale(identifier: "ksb")
     static let ksb_TZ = Locale(identifier: "ksb_TZ")
@@ -506,6 +570,8 @@ public extension Locale {
     static let ksf_CM = Locale(identifier: "ksf_CM")
     static let ksh = Locale(identifier: "ksh")
     static let ksh_DE = Locale(identifier: "ksh_DE")
+    static let ku = Locale(identifier: "ku")
+    static let ku_TR = Locale(identifier: "ku_TR")
     static let kw = Locale(identifier: "kw")
     static let kw_GB = Locale(identifier: "kw_GB")
     static let ky = Locale(identifier: "ky")
@@ -551,12 +617,21 @@ public extension Locale {
     static let mgh_MZ = Locale(identifier: "mgh_MZ")
     static let mgo = Locale(identifier: "mgo")
     static let mgo_CM = Locale(identifier: "mgo_CM")
+    static let mi = Locale(identifier: "mi")
+    static let mi_NZ = Locale(identifier: "mi_NZ")
     static let mk = Locale(identifier: "mk")
     static let mk_MK = Locale(identifier: "mk_MK")
     static let ml = Locale(identifier: "ml")
     static let ml_IN = Locale(identifier: "ml_IN")
     static let mn = Locale(identifier: "mn")
     static let mn_MN = Locale(identifier: "mn_MN")
+    static let mni = Locale(identifier: "mni")
+    static let mni_Beng = Locale(identifier: "mni_Beng")
+    static let mni_Beng_IN = Locale(identifier: "mni_Beng_IN")
+    static let mni_Mtei = Locale(identifier: "mni_Mtei")
+    static let mni_Mtei_IN = Locale(identifier: "mni_Mtei_IN")
+    static let moh = Locale(identifier: "moh")
+    static let moh_CA = Locale(identifier: "moh_CA")
     static let mr = Locale(identifier: "mr")
     static let mr_IN = Locale(identifier: "mr_IN")
     static let ms = Locale(identifier: "ms")
@@ -572,6 +647,8 @@ public extension Locale {
     static let mua_CM = Locale(identifier: "mua_CM")
     static let my = Locale(identifier: "my")
     static let my_MM = Locale(identifier: "my_MM")
+    static let myv = Locale(identifier: "myv")
+    static let myv_RU = Locale(identifier: "myv_RU")
     static let mzn = Locale(identifier: "mzn")
     static let mzn_IR = Locale(identifier: "mzn_IR")
     static let naq = Locale(identifier: "naq")
@@ -601,10 +678,20 @@ public extension Locale {
     static let nn_NO = Locale(identifier: "nn_NO")
     static let nnh = Locale(identifier: "nnh")
     static let nnh_CM = Locale(identifier: "nnh_CM")
+    static let nqo = Locale(identifier: "nqo")
+    static let nqo_GN = Locale(identifier: "nqo_GN")
+    static let nr = Locale(identifier: "nr")
+    static let nr_ZA = Locale(identifier: "nr_ZA")
+    static let nso = Locale(identifier: "nso")
+    static let nso_ZA = Locale(identifier: "nso_ZA")
     static let nus = Locale(identifier: "nus")
     static let nus_SS = Locale(identifier: "nus_SS")
+    static let ny = Locale(identifier: "ny")
+    static let ny_MW = Locale(identifier: "ny_MW")
     static let nyn = Locale(identifier: "nyn")
     static let nyn_UG = Locale(identifier: "nyn_UG")
+    static let oc = Locale(identifier: "oc")
+    static let oc_FR = Locale(identifier: "oc_FR")
     static let om = Locale(identifier: "om")
     static let om_ET = Locale(identifier: "om_ET")
     static let om_KE = Locale(identifier: "om_KE")
@@ -616,12 +703,15 @@ public extension Locale {
     static let pa = Locale(identifier: "pa")
     static let pa_Arab = Locale(identifier: "pa_Arab")
     static let pa_Arab_PK = Locale(identifier: "pa_Arab_PK")
+    static let pa_Aran = Locale(identifier: "pa_Aran")
+    static let pa_Aran_PK = Locale(identifier: "pa_Aran_PK")
     static let pa_Guru = Locale(identifier: "pa_Guru")
     static let pa_Guru_IN = Locale(identifier: "pa_Guru_IN")
     static let pl = Locale(identifier: "pl")
     static let pl_PL = Locale(identifier: "pl_PL")
     static let ps = Locale(identifier: "ps")
     static let ps_AF = Locale(identifier: "ps_AF")
+    static let ps_PK = Locale(identifier: "ps_PK")
     static let pt = Locale(identifier: "pt")
     static let pt_AO = Locale(identifier: "pt_AO")
     static let pt_BR = Locale(identifier: "pt_BR")
@@ -660,12 +750,26 @@ public extension Locale {
     static let rw_RW = Locale(identifier: "rw_RW")
     static let rwk = Locale(identifier: "rwk")
     static let rwk_TZ = Locale(identifier: "rwk_TZ")
+    static let sa = Locale(identifier: "sa")
+    static let sa_IN = Locale(identifier: "sa_IN")
     static let sah = Locale(identifier: "sah")
     static let sah_RU = Locale(identifier: "sah_RU")
     static let saq = Locale(identifier: "saq")
     static let saq_KE = Locale(identifier: "saq_KE")
+    static let sat = Locale(identifier: "sat")
+    static let sat_Deva = Locale(identifier: "sat_Deva")
+    static let sat_Deva_IN = Locale(identifier: "sat_Deva_IN")
+    static let sat_Olck = Locale(identifier: "sat_Olck")
+    static let sat_Olck_IN = Locale(identifier: "sat_Olck_IN")
     static let sbp = Locale(identifier: "sbp")
     static let sbp_TZ = Locale(identifier: "sbp_TZ")
+    static let sc = Locale(identifier: "sc")
+    static let sc_IT = Locale(identifier: "sc_IT")
+    static let scn = Locale(identifier: "scn")
+    static let scn_IT = Locale(identifier: "scn_IT")
+    static let sd = Locale(identifier: "sd")
+    static let sd_Deva = Locale(identifier: "sd_Deva")
+    static let sd_PK = Locale(identifier: "sd_PK")
     static let se = Locale(identifier: "se")
     static let se_FI = Locale(identifier: "se_FI")
     static let se_NO = Locale(identifier: "se_NO")
@@ -711,6 +815,12 @@ public extension Locale {
     static let sr_Latn_ME = Locale(identifier: "sr_Latn_ME")
     static let sr_Latn_RS = Locale(identifier: "sr_Latn_RS")
     static let sr_Latn_XK = Locale(identifier: "sr_Latn_XK")
+    static let ss = Locale(identifier: "ss")
+    static let ss_SZ = Locale(identifier: "ss_SZ")
+    static let ss_ZA = Locale(identifier: "ss_ZA")
+    static let st = Locale(identifier: "st")
+    static let st_LS = Locale(identifier: "st_LS")
+    static let st_ZA = Locale(identifier: "st_ZA")
     static let sv = Locale(identifier: "sv")
     static let sv_AX = Locale(identifier: "sv_AX")
     static let sv_FI = Locale(identifier: "sv_FI")
@@ -720,6 +830,9 @@ public extension Locale {
     static let sw_KE = Locale(identifier: "sw_KE")
     static let sw_TZ = Locale(identifier: "sw_TZ")
     static let sw_UG = Locale(identifier: "sw_UG")
+    static let syr = Locale(identifier: "syr")
+    static let syr_IQ = Locale(identifier: "syr_IQ")
+    static let syr_SY = Locale(identifier: "syr_SY")
     static let ta = Locale(identifier: "ta")
     static let ta_IN = Locale(identifier: "ta_IN")
     static let ta_LK = Locale(identifier: "ta_LK")
@@ -737,13 +850,22 @@ public extension Locale {
     static let ti = Locale(identifier: "ti")
     static let ti_ER = Locale(identifier: "ti_ER")
     static let ti_ET = Locale(identifier: "ti_ET")
+    static let tig = Locale(identifier: "tig")
+    static let tig_ER = Locale(identifier: "tig_ER")
     static let tk = Locale(identifier: "tk")
     static let tk_TM = Locale(identifier: "tk_TM")
+    static let tn = Locale(identifier: "tn")
+    static let tn_BW = Locale(identifier: "tn_BW")
+    static let tn_ZA = Locale(identifier: "tn_ZA")
     static let to = Locale(identifier: "to")
     static let to_TO = Locale(identifier: "to_TO")
     static let tr = Locale(identifier: "tr")
     static let tr_CY = Locale(identifier: "tr_CY")
     static let tr_TR = Locale(identifier: "tr_TR")
+    static let trv = Locale(identifier: "trv")
+    static let trv_TW = Locale(identifier: "trv_TW")
+    static let ts = Locale(identifier: "ts")
+    static let ts_ZA = Locale(identifier: "ts_ZA")
     static let tt = Locale(identifier: "tt")
     static let tt_RU = Locale(identifier: "tt_RU")
     static let twq = Locale(identifier: "twq")
@@ -755,6 +877,12 @@ public extension Locale {
     static let uk = Locale(identifier: "uk")
     static let uk_UA = Locale(identifier: "uk_UA")
     static let ur = Locale(identifier: "ur")
+    static let ur_Arab = Locale(identifier: "ur_Arab")
+    static let ur_Arab_IN = Locale(identifier: "ur_Arab_IN")
+    static let ur_Arab_PK = Locale(identifier: "ur_Arab_PK")
+    static let ur_Aran = Locale(identifier: "ur_Aran")
+    static let ur_Aran_IN = Locale(identifier: "ur_Aran_IN")
+    static let ur_Aran_PK = Locale(identifier: "ur_Aran_PK")
     static let ur_IN = Locale(identifier: "ur_IN")
     static let ur_PK = Locale(identifier: "ur_PK")
     static let uz = Locale(identifier: "uz")
@@ -769,14 +897,23 @@ public extension Locale {
     static let vai_Latn_LR = Locale(identifier: "vai_Latn_LR")
     static let vai_Vaii = Locale(identifier: "vai_Vaii")
     static let vai_Vaii_LR = Locale(identifier: "vai_Vaii_LR")
+    static let ve = Locale(identifier: "ve")
+    static let ve_ZA = Locale(identifier: "ve_ZA")
     static let vi = Locale(identifier: "vi")
     static let vi_VN = Locale(identifier: "vi_VN")
     static let vun = Locale(identifier: "vun")
     static let vun_TZ = Locale(identifier: "vun_TZ")
+    static let wa = Locale(identifier: "wa")
+    static let wa_BE = Locale(identifier: "wa_BE")
     static let wae = Locale(identifier: "wae")
     static let wae_CH = Locale(identifier: "wae_CH")
+    static let wal = Locale(identifier: "wal")
+    static let wal_ET = Locale(identifier: "wal_ET")
     static let wo = Locale(identifier: "wo")
     static let wo_SN = Locale(identifier: "wo_SN")
+    static let wuu = Locale(identifier: "wuu")
+    static let xh = Locale(identifier: "xh")
+    static let xh_ZA = Locale(identifier: "xh_ZA")
     static let xog = Locale(identifier: "xog")
     static let xog_UG = Locale(identifier: "xog_UG")
     static let yav = Locale(identifier: "yav")
@@ -800,14 +937,18 @@ public extension Locale {
     static let zh_Hans_MO = Locale(identifier: "zh_Hans_MO")
     static let zh_Hans_SG = Locale(identifier: "zh_Hans_SG")
     static let zh_Hant = Locale(identifier: "zh_Hant")
+    static let zh_Hant_CN = Locale(identifier: "zh_Hant_CN")
     static let zh_Hant_HK = Locale(identifier: "zh_Hant_HK")
     static let zh_Hant_MO = Locale(identifier: "zh_Hant_MO")
     static let zh_Hant_TW = Locale(identifier: "zh_Hant_TW")
     static let zu = Locale(identifier: "zu")
     static let zu_ZA = Locale(identifier: "zu_ZA")
+
+    // swiftlint:enable identifier_name
 }
 
 extension Locale: CaseIterable {
+
     public static var allCases: [Locale] {
         return [
             .af,
@@ -848,6 +989,8 @@ extension Locale: CaseIterable {
             .ar_TD,
             .ar_TN,
             .ar_YE,
+            .arn,
+            .arn_CL,
             .as,
             .as_IN,
             .asa,
@@ -859,6 +1002,8 @@ extension Locale: CaseIterable {
             .az_Cyrl_AZ,
             .az_Latn,
             .az_Latn_AZ,
+            .ba,
+            .ba_RU,
             .bas,
             .bas_CM,
             .be,
@@ -886,6 +1031,8 @@ extension Locale: CaseIterable {
             .bs_Cyrl_BA,
             .bs_Latn,
             .bs_Latn_BA,
+            .byn,
+            .byn_ER,
             .ca,
             .ca_AD,
             .ca_ES,
@@ -896,6 +1043,8 @@ extension Locale: CaseIterable {
             .ccp_IN,
             .ce,
             .ce_RU,
+            .ceb,
+            .ceb_PH,
             .cgg,
             .cgg_UG,
             .chr,
@@ -903,8 +1052,12 @@ extension Locale: CaseIterable {
             .ckb,
             .ckb_IQ,
             .ckb_IR,
+            .co,
+            .co_FR,
             .cs,
             .cs_CZ,
+            .cv,
+            .cv_RU,
             .cy,
             .cy_GB,
             .da,
@@ -926,6 +1079,8 @@ extension Locale: CaseIterable {
             .dsb_DE,
             .dua,
             .dua_CM,
+            .dv,
+            .dv_MV,
             .dyo,
             .dyo_SN,
             .dz,
@@ -942,6 +1097,7 @@ extension Locale: CaseIterable {
             .en_001,
             .en_150,
             .en_AD,
+            .en_AE,
             .en_AG,
             .en_AI,
             .en_AL,
@@ -964,8 +1120,10 @@ extension Locale: CaseIterable {
             .en_CC,
             .en_CH,
             .en_CK,
+            .en_CL,
             .en_CM,
             .en_CN,
+            .en_CO,
             .en_CX,
             .en_CY,
             .en_CZ,
@@ -1018,6 +1176,7 @@ extension Locale: CaseIterable {
             .en_ME,
             .en_MG,
             .en_MH,
+            .en_MM,
             .en_MO,
             .en_MP,
             .en_MS,
@@ -1025,6 +1184,7 @@ extension Locale: CaseIterable {
             .en_MU,
             .en_MV,
             .en_MW,
+            .en_MX,
             .en_MY,
             .en_NA,
             .en_NF,
@@ -1043,6 +1203,7 @@ extension Locale: CaseIterable {
             .en_PT,
             .en_PW,
             .en_RO,
+            .en_RS,
             .en_RU,
             .en_RW,
             .en_SA,
@@ -1067,6 +1228,7 @@ extension Locale: CaseIterable {
             .en_TV,
             .en_TW,
             .en_TZ,
+            .en_UA,
             .en_UG,
             .en_UM,
             .en_US,
@@ -1080,6 +1242,7 @@ extension Locale: CaseIterable {
             .en_ZM,
             .en_ZW,
             .eo,
+            .eo_001,
             .es,
             .es_419,
             .es_AG,
@@ -1151,10 +1314,19 @@ extension Locale: CaseIterable {
             .fa_AF,
             .fa_IR,
             .ff,
-            .ff_CM,
-            .ff_GN,
-            .ff_MR,
-            .ff_SN,
+            .ff_Latn,
+            .ff_Latn_BF,
+            .ff_Latn_CM,
+            .ff_Latn_GH,
+            .ff_Latn_GM,
+            .ff_Latn_GN,
+            .ff_Latn_GW,
+            .ff_Latn_LR,
+            .ff_Latn_MR,
+            .ff_Latn_NE,
+            .ff_Latn_NG,
+            .ff_Latn_SL,
+            .ff_Latn_SN,
             .fi,
             .fi_FI,
             .fil,
@@ -1215,10 +1387,17 @@ extension Locale: CaseIterable {
             .fy_NL,
             .ga,
             .ga_IE,
+            .gaa,
+            .gaa_GH,
             .gd,
             .gd_GB,
+            .gez,
+            .gez_ER,
+            .gez_ET,
             .gl,
             .gl_ES,
+            .gn,
+            .gn_PY,
             .gsw,
             .gsw_CH,
             .gsw_FR,
@@ -1239,6 +1418,7 @@ extension Locale: CaseIterable {
             .he_IL,
             .hi,
             .hi_IN,
+            .hi_Latn,
             .hr,
             .hr_BA,
             .hr_HR,
@@ -1248,12 +1428,16 @@ extension Locale: CaseIterable {
             .hu_HU,
             .hy,
             .hy_AM,
+            .ia,
+            .ia_001,
             .id,
             .id_ID,
             .ig,
             .ig_NG,
             .ii,
             .ii_CN,
+            .io,
+            .io_001,
             .is,
             .is_IS,
             .it,
@@ -1265,16 +1449,24 @@ extension Locale: CaseIterable {
             .iu_CA,
             .ja,
             .ja_JP,
+            .jbo,
+            .jbo_001,
             .jgo,
             .jgo_CM,
             .jmc,
             .jmc_TZ,
+            .jv,
+            .jv_ID,
             .ka,
             .ka_GE,
             .kab,
             .kab_DZ,
+            .kaj,
+            .kaj_NG,
             .kam,
             .kam_KE,
+            .kcg,
+            .kcg_NG,
             .kde,
             .kde_TZ,
             .kea,
@@ -1300,7 +1492,15 @@ extension Locale: CaseIterable {
             .ko_KR,
             .kok,
             .kok_IN,
+            .kpe,
+            .kpe_GN,
+            .kpe_LR,
             .ks,
+            .ks_Arab,
+            .ks_Arab_IN,
+            .ks_Aran,
+            .ks_Aran_IN,
+            .ks_Deva,
             .ks_IN,
             .ksb,
             .ksb_TZ,
@@ -1308,6 +1508,8 @@ extension Locale: CaseIterable {
             .ksf_CM,
             .ksh,
             .ksh_DE,
+            .ku,
+            .ku_TR,
             .kw,
             .kw_GB,
             .ky,
@@ -1353,12 +1555,21 @@ extension Locale: CaseIterable {
             .mgh_MZ,
             .mgo,
             .mgo_CM,
+            .mi,
+            .mi_NZ,
             .mk,
             .mk_MK,
             .ml,
             .ml_IN,
             .mn,
             .mn_MN,
+            .mni,
+            .mni_Beng,
+            .mni_Beng_IN,
+            .mni_Mtei,
+            .mni_Mtei_IN,
+            .moh,
+            .moh_CA,
             .mr,
             .mr_IN,
             .ms,
@@ -1374,6 +1585,8 @@ extension Locale: CaseIterable {
             .mua_CM,
             .my,
             .my_MM,
+            .myv,
+            .myv_RU,
             .mzn,
             .mzn_IR,
             .naq,
@@ -1403,10 +1616,20 @@ extension Locale: CaseIterable {
             .nn_NO,
             .nnh,
             .nnh_CM,
+            .nqo,
+            .nqo_GN,
+            .nr,
+            .nr_ZA,
+            .nso,
+            .nso_ZA,
             .nus,
             .nus_SS,
+            .ny,
+            .ny_MW,
             .nyn,
             .nyn_UG,
+            .oc,
+            .oc_FR,
             .om,
             .om_ET,
             .om_KE,
@@ -1418,12 +1641,15 @@ extension Locale: CaseIterable {
             .pa,
             .pa_Arab,
             .pa_Arab_PK,
+            .pa_Aran,
+            .pa_Aran_PK,
             .pa_Guru,
             .pa_Guru_IN,
             .pl,
             .pl_PL,
             .ps,
             .ps_AF,
+            .ps_PK,
             .pt,
             .pt_AO,
             .pt_BR,
@@ -1462,12 +1688,26 @@ extension Locale: CaseIterable {
             .rw_RW,
             .rwk,
             .rwk_TZ,
+            .sa,
+            .sa_IN,
             .sah,
             .sah_RU,
             .saq,
             .saq_KE,
+            .sat,
+            .sat_Deva,
+            .sat_Deva_IN,
+            .sat_Olck,
+            .sat_Olck_IN,
             .sbp,
             .sbp_TZ,
+            .sc,
+            .sc_IT,
+            .scn,
+            .scn_IT,
+            .sd,
+            .sd_Deva,
+            .sd_PK,
             .se,
             .se_FI,
             .se_NO,
@@ -1513,6 +1753,12 @@ extension Locale: CaseIterable {
             .sr_Latn_ME,
             .sr_Latn_RS,
             .sr_Latn_XK,
+            .ss,
+            .ss_SZ,
+            .ss_ZA,
+            .st,
+            .st_LS,
+            .st_ZA,
             .sv,
             .sv_AX,
             .sv_FI,
@@ -1522,6 +1768,9 @@ extension Locale: CaseIterable {
             .sw_KE,
             .sw_TZ,
             .sw_UG,
+            .syr,
+            .syr_IQ,
+            .syr_SY,
             .ta,
             .ta_IN,
             .ta_LK,
@@ -1539,13 +1788,22 @@ extension Locale: CaseIterable {
             .ti,
             .ti_ER,
             .ti_ET,
+            .tig,
+            .tig_ER,
             .tk,
             .tk_TM,
+            .tn,
+            .tn_BW,
+            .tn_ZA,
             .to,
             .to_TO,
             .tr,
             .tr_CY,
             .tr_TR,
+            .trv,
+            .trv_TW,
+            .ts,
+            .ts_ZA,
             .tt,
             .tt_RU,
             .twq,
@@ -1557,6 +1815,12 @@ extension Locale: CaseIterable {
             .uk,
             .uk_UA,
             .ur,
+            .ur_Arab,
+            .ur_Arab_IN,
+            .ur_Arab_PK,
+            .ur_Aran,
+            .ur_Aran_IN,
+            .ur_Aran_PK,
             .ur_IN,
             .ur_PK,
             .uz,
@@ -1571,14 +1835,23 @@ extension Locale: CaseIterable {
             .vai_Latn_LR,
             .vai_Vaii,
             .vai_Vaii_LR,
+            .ve,
+            .ve_ZA,
             .vi,
             .vi_VN,
             .vun,
             .vun_TZ,
+            .wa,
+            .wa_BE,
             .wae,
             .wae_CH,
+            .wal,
+            .wal_ET,
             .wo,
             .wo_SN,
+            .wuu,
+            .xh,
+            .xh_ZA,
             .xog,
             .xog_UG,
             .yav,
@@ -1602,6 +1875,7 @@ extension Locale: CaseIterable {
             .zh_Hans_MO,
             .zh_Hans_SG,
             .zh_Hant,
+            .zh_Hant_CN,
             .zh_Hant_HK,
             .zh_Hant_MO,
             .zh_Hant_TW,
