@@ -7,7 +7,11 @@
 
 import Foundation
 
+// swiftlint:disable file_length
+
 public extension Locale {
+
+    // swiftlint:disable identifier_name
 
     static let af = Locale(identifier: "af")
     static let af_NA = Locale(identifier: "af_NA")
@@ -939,6 +943,8 @@ public extension Locale {
     static let zh_Hant_TW = Locale(identifier: "zh_Hant_TW")
     static let zu = Locale(identifier: "zu")
     static let zu_ZA = Locale(identifier: "zu_ZA")
+
+    // swiftlint:enable identifier_name
 }
 
 extension Locale: CaseIterable {

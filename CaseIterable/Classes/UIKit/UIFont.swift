@@ -7,7 +7,11 @@
 
 import UIKit
 
+// swiftlint:disable file_length
+
 extension UIFont {
+
+    // swiftlint:disable type_body_length
 
     public enum SystemName: String, CaseIterable {
 
@@ -528,6 +532,8 @@ extension UIFont {
 
         case zapfino = "Zapfino"
     }
+
+    // swiftlint:enable type_body_length
 }
 
 extension UIFont {

@@ -452,7 +452,11 @@ def convert(one_string):
 
 import UIKit
 
+// swiftlint:disable file_length
+
 extension UIFont {
+
+    // swiftlint:disable type_body_length
 
     public enum SystemName: String, CaseIterable {
 % for pair in uifont_familynames_fontnames:
@@ -464,6 +468,8 @@ extension UIFont {
 %   end
 % end
     }
+
+    // swiftlint:enable type_body_length
 }
 
 extension UIFont {
