@@ -34,6 +34,9 @@ uifont_familynames_fontnames = [
         'AppleSDGothicNeo-UltraLight',
         'AppleSDGothicNeo-Medium',
     ]),
+    ('Apple Symbols', [
+        'AppleSymbols',
+    ]),
     ('Arial', [
         'Arial-BoldMT',
         'Arial-BoldItalicMT',
@@ -90,8 +93,6 @@ uifont_familynames_fontnames = [
         'AvenirNextCondensed-Italic',
         'AvenirNextCondensed-UltraLight',
     ]),
-    # ('Bangla Sangam MN', [
-    # ]),
     ('Baskerville', [
         'Baskerville-SemiBoldItalic',
         'Baskerville-SemiBold',
@@ -195,6 +196,10 @@ uifont_familynames_fontnames = [
         'Futura-CondensedMedium',
         'Futura-MediumItalic',
     ]),
+    ('Galvji', [
+        'Galvji-Bold',
+        'Galvji',
+    ]),
     ('Geeza Pro', [
         'GeezaPro-Bold',
         'GeezaPro',
@@ -216,18 +221,6 @@ uifont_familynames_fontnames = [
         'GillSans-BoldItalic',
         'GillSans-LightItalic',
     ]),
-    ('Gujarati Sangam MN', [
-        'GujaratiSangamMN',
-        'GujaratiSangamMN-Bold',
-    ]),
-    ('Gurmukhi MN', [
-        'GurmukhiMN-Bold',
-        'GurmukhiMN',
-    ]),
-    # ('Heiti SC', [
-    # ]),
-    # ('Heiti TC', [
-    # ]),
     ('Helvetica', [
         'Helvetica-Oblique',
         'Helvetica-BoldOblique',
@@ -262,6 +255,7 @@ uifont_familynames_fontnames = [
     ('Hiragino Sans', [
         'HiraginoSans-W3',
         'HiraginoSans-W6',
+        'HiraginoSans-W7',
     ]),
     ('Hoefler Text', [
         'HoeflerText-Italic',
@@ -272,10 +266,6 @@ uifont_familynames_fontnames = [
     ('Kailasa', [
         'Kailasa-Bold',
         'Kailasa',
-    ]),
-    ('Kannada Sangam MN', [
-        'KannadaSangamMN-Bold',
-        'KannadaSangamMN',
     ]),
     ('Kefa', [
         'Kefa-Regular',
@@ -292,6 +282,11 @@ uifont_familynames_fontnames = [
         'KohinoorDevanagari-Regular',
         'KohinoorDevanagari-Light',
         'KohinoorDevanagari-Semibold',
+    ]),
+    ('Kohinoor Gujarati', [
+        'KohinoorGujarati-Light',
+        'KohinoorGujarati-Bold',
+        'KohinoorGujarati-Regular',
     ]),
     ('Kohinoor Telugu', [
         'KohinoorTelugu-Regular',
@@ -318,6 +313,11 @@ uifont_familynames_fontnames = [
     ('Mishafi', [
         'DiwanMishafi',
     ]),
+    ('Mukta Mahee', [
+        'MuktaMahee-Light',
+        'MuktaMahee-Bold',
+        'MuktaMahee-Regular',
+    ]),
     ('Myanmar Sangam MN', [
         'MyanmarSangamMN',
         'MyanmarSangamMN-Bold',
@@ -328,9 +328,21 @@ uifont_familynames_fontnames = [
     ]),
     ('Noto Nastaliq Urdu', [
         'NotoNastaliqUrdu',
+        'NotoNastaliqUrdu-Bold',
     ]),
-    ('Noto Sans Chakma', [
-        'NotoSansChakma-Regular',
+    ('Noto Sans Kannada', [
+        'NotoSansKannada-Bold',
+        'NotoSansKannada-Light',
+        'NotoSansKannada-Regular',
+    ]),
+    ('Noto Sans Myanmar', [
+        'NotoSansMyanmar-Regular',
+        'NotoSansMyanmar-Bold',
+        'NotoSansMyanmar-Light',
+    ]),
+    ('Noto Sans Oriya', [
+        'NotoSansOriya-Bold',
+        'NotoSansOriya',
     ]),
     ('Optima', [
         'Optima-ExtraBlack',
@@ -338,10 +350,6 @@ uifont_familynames_fontnames = [
         'Optima-Italic',
         'Optima-Regular',
         'Optima-Bold',
-    ]),
-    ('Oriya Sangam MN', [
-        'OriyaSangamMN',
-        'OriyaSangamMN-Bold',
     ]),
     ('Palatino', [
         'Palatino-Italic',
@@ -405,8 +413,6 @@ uifont_familynames_fontnames = [
         'TamilSangamMN',
         'TamilSangamMN-Bold',
     ]),
-    # ('Telugu Sangam MN', [
-    # ]),
     ('Thonburi', [
         'Thonburi',
         'Thonburi-Light',
@@ -447,7 +453,8 @@ def convert(one_string):
 import UIKit
 
 extension UIFont {
-    public enum SystemFontName: String, CaseIterable {
+
+    public enum SystemName: String, CaseIterable {
 % for pair in uifont_familynames_fontnames:
 
         // MARK: ${pair[0]}
@@ -460,7 +467,8 @@ extension UIFont {
 }
 
 extension UIFont {
-    public convenience init?(fontName: UIFont.SystemFontName, size: CGFloat) {
-        self.init(name: fontName.rawValue, size: size)
+
+    public convenience init?(systemName: UIFont.SystemName, size: CGFloat) {
+        self.init(name: systemName.rawValue, size: size)
     }
 }
