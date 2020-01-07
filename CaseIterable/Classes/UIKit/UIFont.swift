@@ -3,6 +3,7 @@
 //  CaseIterable
 //
 //  Created by nuomi1 on 27/7/2019.
+//  Copyright © 2019 nuomi1. All rights reserved.
 //
 
 import UIKit
