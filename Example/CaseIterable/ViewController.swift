@@ -6,6 +6,7 @@
 //  Copyright (c) 2019 nuomi1. All rights reserved.
 //
 
+import CaseIterable
 import UIKit
 
 class ViewController: UIViewController {
