@@ -1,0 +1,16 @@
+name: CaseIterable
+
+attributes:
+  ORGANIZATIONNAME: nuomi1
+
+targets:
+  CaseIterable_Example:
+    type: application
+    platform: iOS
+    deploymentTarget: 9.0
+    sources:
+      - CaseIterable
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.cocoapods.demo.CaseIterable-Example
+        SWIFT_VERSION: 5.0
