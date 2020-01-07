@@ -54,6 +54,10 @@ locale_available_identifiers = [
         'ar_TN',
         'ar_YE',
     ]),
+    ('arn', [
+        'arn',
+        'arn_CL',
+    ]),
     ('as', [
         'as',
         'as_IN',
@@ -72,6 +76,10 @@ locale_available_identifiers = [
         'az_Cyrl_AZ',
         'az_Latn',
         'az_Latn_AZ',
+    ]),
+    ('ba', [
+        'ba',
+        'ba_RU',
     ]),
     ('bas', [
         'bas',
@@ -122,6 +130,10 @@ locale_available_identifiers = [
         'bs_Latn',
         'bs_Latn_BA',
     ]),
+    ('byn', [
+        'byn',
+        'byn_ER',
+    ]),
     ('ca', [
         'ca',
         'ca_AD',
@@ -138,6 +150,10 @@ locale_available_identifiers = [
         'ce',
         'ce_RU',
     ]),
+    ('ceb', [
+        'ceb',
+        'ceb_PH',
+    ]),
     ('cgg', [
         'cgg',
         'cgg_UG',
@@ -151,9 +167,17 @@ locale_available_identifiers = [
         'ckb_IQ',
         'ckb_IR',
     ]),
+    ('co', [
+        'co',
+        'co_FR',
+    ]),
     ('cs', [
         'cs',
         'cs_CZ',
+    ]),
+    ('cv', [
+        'cv',
+        'cv_RU',
     ]),
     ('cy', [
         'cy',
@@ -190,6 +214,10 @@ locale_available_identifiers = [
         'dua',
         'dua_CM',
     ]),
+    ('dv', [
+        'dv',
+        'dv_MV',
+    ]),
     ('dyo', [
         'dyo',
         'dyo_SN',
@@ -217,6 +245,7 @@ locale_available_identifiers = [
         'en_001',
         'en_150',
         'en_AD',
+        'en_AE',
         'en_AG',
         'en_AI',
         'en_AL',
@@ -239,8 +268,10 @@ locale_available_identifiers = [
         'en_CC',
         'en_CH',
         'en_CK',
+        'en_CL',
         'en_CM',
         'en_CN',
+        'en_CO',
         'en_CX',
         'en_CY',
         'en_CZ',
@@ -293,6 +324,7 @@ locale_available_identifiers = [
         'en_ME',
         'en_MG',
         'en_MH',
+        'en_MM',
         'en_MO',
         'en_MP',
         'en_MS',
@@ -300,6 +332,7 @@ locale_available_identifiers = [
         'en_MU',
         'en_MV',
         'en_MW',
+        'en_MX',
         'en_MY',
         'en_NA',
         'en_NF',
@@ -318,6 +351,7 @@ locale_available_identifiers = [
         'en_PT',
         'en_PW',
         'en_RO',
+        'en_RS',
         'en_RU',
         'en_RW',
         'en_SA',
@@ -342,6 +376,7 @@ locale_available_identifiers = [
         'en_TV',
         'en_TW',
         'en_TZ',
+        'en_UA',
         'en_UG',
         'en_UM',
         'en_US',
@@ -357,6 +392,7 @@ locale_available_identifiers = [
     ]),
     ('eo', [
         'eo',
+        'eo_001',
     ]),
     ('es', [
         'es',
@@ -440,10 +476,19 @@ locale_available_identifiers = [
     ]),
     ('ff', [
         'ff',
-        'ff_CM',
-        'ff_GN',
-        'ff_MR',
-        'ff_SN',
+        'ff_Latn',
+        'ff_Latn_BF',
+        'ff_Latn_CM',
+        'ff_Latn_GH',
+        'ff_Latn_GM',
+        'ff_Latn_GN',
+        'ff_Latn_GW',
+        'ff_Latn_LR',
+        'ff_Latn_MR',
+        'ff_Latn_NE',
+        'ff_Latn_NG',
+        'ff_Latn_SL',
+        'ff_Latn_SN',
     ]),
     ('fi', [
         'fi',
@@ -519,13 +564,26 @@ locale_available_identifiers = [
         'ga',
         'ga_IE',
     ]),
+    ('gaa', [
+        'gaa',
+        'gaa_GH',
+    ]),
     ('gd', [
         'gd',
         'gd_GB',
     ]),
+    ('gez', [
+        'gez',
+        'gez_ER',
+        'gez_ET',
+    ]),
     ('gl', [
         'gl',
         'gl_ES',
+    ]),
+    ('gn', [
+        'gn',
+        'gn_PY',
     ]),
     ('gsw', [
         'gsw',
@@ -562,6 +620,7 @@ locale_available_identifiers = [
     ('hi', [
         'hi',
         'hi_IN',
+        'hi_Latn',
     ]),
     ('hr', [
         'hr',
@@ -580,6 +639,10 @@ locale_available_identifiers = [
         'hy',
         'hy_AM',
     ]),
+    ('ia', [
+        'ia',
+        'ia_001',
+    ]),
     ('id', [
         'id',
         'id_ID',
@@ -591,6 +654,10 @@ locale_available_identifiers = [
     ('ii', [
         'ii',
         'ii_CN',
+    ]),
+    ('io', [
+        'io',
+        'io_001',
     ]),
     ('is', [
         'is',
@@ -611,6 +678,10 @@ locale_available_identifiers = [
         'ja',
         'ja_JP',
     ]),
+    ('jbo', [
+        'jbo',
+        'jbo_001',
+    ]),
     ('jgo', [
         'jgo',
         'jgo_CM',
@@ -618,6 +689,10 @@ locale_available_identifiers = [
     ('jmc', [
         'jmc',
         'jmc_TZ',
+    ]),
+    ('jv', [
+        'jv',
+        'jv_ID',
     ]),
     ('ka', [
         'ka',
@@ -627,9 +702,17 @@ locale_available_identifiers = [
         'kab',
         'kab_DZ',
     ]),
+    ('kaj', [
+        'kaj',
+        'kaj_NG',
+    ]),
     ('kam', [
         'kam',
         'kam_KE',
+    ]),
+    ('kcg', [
+        'kcg',
+        'kcg_NG',
     ]),
     ('kde', [
         'kde',
@@ -680,8 +763,18 @@ locale_available_identifiers = [
         'kok',
         'kok_IN',
     ]),
+    ('kpe', [
+        'kpe',
+        'kpe_GN',
+        'kpe_LR',
+    ]),
     ('ks', [
         'ks',
+        'ks_Arab',
+        'ks_Arab_IN',
+        'ks_Aran',
+        'ks_Aran_IN',
+        'ks_Deva',
         'ks_IN',
     ]),
     ('ksb', [
@@ -695,6 +788,10 @@ locale_available_identifiers = [
     ('ksh', [
         'ksh',
         'ksh_DE',
+    ]),
+    ('ku', [
+        'ku',
+        'ku_TR',
     ]),
     ('kw', [
         'kw',
@@ -781,6 +878,10 @@ locale_available_identifiers = [
         'mgo',
         'mgo_CM',
     ]),
+    ('mi', [
+        'mi',
+        'mi_NZ',
+    ]),
     ('mk', [
         'mk',
         'mk_MK',
@@ -792,6 +893,17 @@ locale_available_identifiers = [
     ('mn', [
         'mn',
         'mn_MN',
+    ]),
+    ('mni', [
+        'mni',
+        'mni_Beng',
+        'mni_Beng_IN',
+        'mni_Mtei',
+        'mni_Mtei_IN',
+    ]),
+    ('moh', [
+        'moh',
+        'moh_CA',
     ]),
     ('mr', [
         'mr',
@@ -817,6 +929,10 @@ locale_available_identifiers = [
     ('my', [
         'my',
         'my_MM',
+    ]),
+    ('myv', [
+        'myv',
+        'myv_RU',
     ]),
     ('mzn', [
         'mzn',
@@ -867,13 +983,33 @@ locale_available_identifiers = [
         'nnh',
         'nnh_CM',
     ]),
+    ('nqo', [
+        'nqo',
+        'nqo_GN',
+    ]),
+    ('nr', [
+        'nr',
+        'nr_ZA',
+    ]),
+    ('nso', [
+        'nso',
+        'nso_ZA',
+    ]),
     ('nus', [
         'nus',
         'nus_SS',
     ]),
+    ('ny', [
+        'ny',
+        'ny_MW',
+    ]),
     ('nyn', [
         'nyn',
         'nyn_UG',
+    ]),
+    ('oc', [
+        'oc',
+        'oc_FR',
     ]),
     ('om', [
         'om',
@@ -893,6 +1029,8 @@ locale_available_identifiers = [
         'pa',
         'pa_Arab',
         'pa_Arab_PK',
+        'pa_Aran',
+        'pa_Aran_PK',
         'pa_Guru',
         'pa_Guru_IN',
     ]),
@@ -903,6 +1041,7 @@ locale_available_identifiers = [
     ('ps', [
         'ps',
         'ps_AF',
+        'ps_PK',
     ]),
     ('pt', [
         'pt',
@@ -960,6 +1099,10 @@ locale_available_identifiers = [
         'rwk',
         'rwk_TZ',
     ]),
+    ('sa', [
+        'sa',
+        'sa_IN',
+    ]),
     ('sah', [
         'sah',
         'sah_RU',
@@ -968,9 +1111,29 @@ locale_available_identifiers = [
         'saq',
         'saq_KE',
     ]),
+    ('sat', [
+        'sat',
+        'sat_Deva',
+        'sat_Deva_IN',
+        'sat_Olck',
+        'sat_Olck_IN',
+    ]),
     ('sbp', [
         'sbp',
         'sbp_TZ',
+    ]),
+    ('sc', [
+        'sc',
+        'sc_IT',
+    ]),
+    ('scn', [
+        'scn',
+        'scn_IT',
+    ]),
+    ('sd', [
+        'sd',
+        'sd_Deva',
+        'sd_PK',
     ]),
     ('se', [
         'se',
@@ -1043,6 +1206,16 @@ locale_available_identifiers = [
         'sr_Latn_RS',
         'sr_Latn_XK',
     ]),
+    ('ss', [
+        'ss',
+        'ss_SZ',
+        'ss_ZA',
+    ]),
+    ('st', [
+        'st',
+        'st_LS',
+        'st_ZA',
+    ]),
     ('sv', [
         'sv',
         'sv_AX',
@@ -1055,6 +1228,11 @@ locale_available_identifiers = [
         'sw_KE',
         'sw_TZ',
         'sw_UG',
+    ]),
+    ('syr', [
+        'syr',
+        'syr_IQ',
+        'syr_SY',
     ]),
     ('ta', [
         'ta',
@@ -1085,9 +1263,18 @@ locale_available_identifiers = [
         'ti_ER',
         'ti_ET',
     ]),
+    ('tig', [
+        'tig',
+        'tig_ER',
+    ]),
     ('tk', [
         'tk',
         'tk_TM',
+    ]),
+    ('tn', [
+        'tn',
+        'tn_BW',
+        'tn_ZA',
     ]),
     ('to', [
         'to',
@@ -1097,6 +1284,14 @@ locale_available_identifiers = [
         'tr',
         'tr_CY',
         'tr_TR',
+    ]),
+    ('trv', [
+        'trv',
+        'trv_TW',
+    ]),
+    ('ts', [
+        'ts',
+        'ts_ZA',
     ]),
     ('tt', [
         'tt',
@@ -1120,6 +1315,12 @@ locale_available_identifiers = [
     ]),
     ('ur', [
         'ur',
+        'ur_Arab',
+        'ur_Arab_IN',
+        'ur_Arab_PK',
+        'ur_Aran',
+        'ur_Aran_IN',
+        'ur_Aran_PK',
         'ur_IN',
         'ur_PK',
     ]),
@@ -1139,6 +1340,10 @@ locale_available_identifiers = [
         'vai_Vaii',
         'vai_Vaii_LR',
     ]),
+    ('ve', [
+        've',
+        've_ZA',
+    ]),
     ('vi', [
         'vi',
         'vi_VN',
@@ -1147,13 +1352,28 @@ locale_available_identifiers = [
         'vun',
         'vun_TZ',
     ]),
+    ('wa', [
+        'wa',
+        'wa_BE',
+    ]),
     ('wae', [
         'wae',
         'wae_CH',
     ]),
+    ('wal', [
+        'wal',
+        'wal_ET',
+    ]),
     ('wo', [
         'wo',
         'wo_SN',
+    ]),
+    ('wuu', [
+        'wuu',
+    ]),
+    ('xh', [
+        'xh',
+        'xh_ZA',
     ]),
     ('xog', [
         'xog',
@@ -1191,6 +1411,7 @@ locale_available_identifiers = [
         'zh_Hans_MO',
         'zh_Hans_SG',
         'zh_Hant',
+        'zh_Hant_CN',
         'zh_Hant_HK',
         'zh_Hant_MO',
         'zh_Hant_TW',
@@ -1205,6 +1426,7 @@ locale_available_identifiers = [
 import Foundation
 
 public extension Locale {
+
 % for pair in locale_available_identifiers:
 %   for identifier in pair[1]:
 %     (prefix, suffix) = ('`', '`') if identifier in ['as', 'is'] else ('', '')
@@ -1214,6 +1436,7 @@ public extension Locale {
 }
 
 extension Locale: CaseIterable {
+
     public static var allCases: [Locale] {
         return [
 % for pair in locale_available_identifiers:
