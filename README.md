@@ -5,24 +5,29 @@
 [![License](https://img.shields.io/cocoapods/l/CaseIterable.svg?style=flat)](https://cocoapods.org/pods/CaseIterable)
 [![Platform](https://img.shields.io/cocoapods/p/CaseIterable.svg?style=flat)](https://cocoapods.org/pods/CaseIterable)
 
+## Introduction
+
+System module with CaseIterable.
+
+- Foundation
+  - Locale
+- UIKit
+  - UIFont
+
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `xcodegen && pod install && open CaseIterable.xcworkspace` from the Example directory first.
 
 ## Requirements
 
-## Installation
-
-CaseIterable is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'CaseIterable'
-```
+- CocoaPods >= 1.7.2
+- Swift >= 5.0
+- Xcode >= 10.2
+- XcodeGen
 
 ## Author
 
-nuomi1, nuomi1@qq.com
+[nuomi1](mailto:nuomi1@qq.com)
 
 ## License
 
