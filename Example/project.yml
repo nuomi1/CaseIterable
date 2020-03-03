@@ -14,3 +14,10 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: org.cocoapods.demo.CaseIterable-Example
         SWIFT_VERSION: 5.0
+
+  CaseIterable_Tests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: 9.0
+    sources:
+      - Tests

@@ -1,16 +1,23 @@
 PODS:
-  - CaseIterable (0.2.1)
+  - CaseIterable (0.2.2)
+  - DeviceKit (2.3.0)
 
 DEPENDENCIES:
   - CaseIterable (from `../`)
+  - DeviceKit
+
+SPEC REPOS:
+  trunk:
+    - DeviceKit
 
 EXTERNAL SOURCES:
   CaseIterable:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CaseIterable: 140dea8ee91157f34bfb275052fe9f40dde59678
+  CaseIterable: d1d57b724cbafe8d0e9b5517c6d8245daf0a09dc
+  DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
 
-PODFILE CHECKSUM: c370acb5622dd02b6c145f0fd6c6e911eb2e6b33
+PODFILE CHECKSUM: 0b2fe891b8629c0ca70c5e3e5340ab6a2a694745
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.0

@@ -5,6 +5,12 @@ inhibit_all_warnings!
 
 target "CaseIterable_Example" do
   pod "CaseIterable", :path => "../"
+
+  target "CaseIterable_Tests" do
+    pod "DeviceKit"
+
+    inherit! :complete
+  end
 end
 
 post_install do |installer|
