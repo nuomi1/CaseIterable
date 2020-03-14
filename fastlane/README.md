@@ -26,6 +26,21 @@ fastlane ios setup_xcodegen
 fastlane ios setup_cocoapods
 ```
 
+### ios setup
+```
+fastlane ios setup
+```
+
+### ios scan
+```
+fastlane ios scan
+```
+
+### ios generate_locale_json
+```
+fastlane ios generate_locale_json
+```
+
 
 ----
 
