@@ -7,10 +7,23 @@ targets:
   CaseIterable_Example:
     type: application
     platform: iOS
-    deploymentTarget: 9.0
+    deploymentTarget: 10.3
     sources:
       - CaseIterable
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: org.cocoapods.demo.CaseIterable-Example
         SWIFT_VERSION: 5.0
+    scheme:
+      testTargets: 
+        - CaseIterable_Tests
+      environmentVariables:
+        GITHUB_GIST_TOKEN: ${GITHUB_GIST_TOKEN}
+        GITHUB_GIST_ID: ${GITHUB_GIST_ID}
+
+  CaseIterable_Tests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: 10.3
+    sources:
+      - Tests

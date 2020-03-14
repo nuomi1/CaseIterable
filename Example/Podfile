@@ -1,10 +1,17 @@
-platform :ios, "9.0"
+platform :ios, "10.3"
 
 use_frameworks!
 inhibit_all_warnings!
 
 target "CaseIterable_Example" do
   pod "CaseIterable", :path => "../"
+
+  target "CaseIterable_Tests" do
+    pod "DeviceKit"
+    pod "Moya"
+
+    inherit! :complete
+  end
 end
 
 post_install do |installer|
