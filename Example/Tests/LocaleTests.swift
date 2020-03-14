@@ -57,6 +57,23 @@ extension LocaleTests {
             try data.write(to: filePath)
 
             debugPrint(filePath)
+
+            let dispatchSemaphore = DispatchSemaphore(value: 0)
+
+            let target = GitHubAPI.updateGist(gistId: GitHubAPI.gistId, file: filePath)
+
+            githubProvider.request(target) { result in
+                switch result {
+                case let .success(response):
+                    XCTAssertTrue(response.statusCode == 200)
+                case let .failure(error):
+                    XCTAssertFalse(true, error.errorDescription!)
+                }
+
+                dispatchSemaphore.signal()
+            }
+
+            _ = dispatchSemaphore.wait(timeout: .now() + 60)
         } catch {
             XCTAssertFalse(true, error.localizedDescription)
         }
