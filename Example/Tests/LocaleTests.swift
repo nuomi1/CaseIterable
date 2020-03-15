@@ -6,7 +6,6 @@
 //  Copyright © 2019 nuomi1. All rights reserved.
 //
 
-import DeviceKit
 import XCTest
 
 class LocaleTests: XCTestCase {
