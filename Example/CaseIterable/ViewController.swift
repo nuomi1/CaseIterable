@@ -22,26 +22,6 @@ class ViewController: UIViewController {
     }
 }
 
-func generateLocale() {
-    let availableIdentifiers = Locale.availableIdentifiers.sorted()
-    let availableIdentifiersMap = Dictionary(grouping: availableIdentifiers) { $0.split(separator: "_").first!
-    }.sorted { $0.0 < $1.0 }
-
-    print("locale_available_identifiers = [")
-
-    for pair in availableIdentifiersMap {
-        print("    ('\(pair.key)', [")
-
-        for identifier in pair.value {
-            print("        '\(identifier)',")
-        }
-
-        print("    ]),")
-    }
-
-    print("]")
-}
-
 func generateUIFont() {
     let familyNames = UIFont.familyNames.sorted()
 
