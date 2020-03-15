@@ -36,7 +36,7 @@ platform :ios do
     setup_cocoapods
   end
 
-  lane :scan_locale do
+  lane :scan_test do |options|
     scan(
       workspace: "Example/CaseIterable.xcworkspace",
       clean: true,
@@ -57,11 +57,17 @@ platform :ios do
         "platform=iOS Simulator,OS=13.3,name=iPhone 6s",
       ],
       max_concurrent_simulators: 2,
+      xcconfig: options[:test],
     )
   end
 
   lane :generate_locale_json do
     setup
-    scan_locale
+    scan_test(test: "TEST_LOCALE")
+  end
+
+  lane :generate_uifont_json do
+    setup
+    scan_test(test: "TEST_UIFONT")
   end
 end
