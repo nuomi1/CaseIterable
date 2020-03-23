@@ -57,7 +57,7 @@ platform :ios do
         "platform=iOS Simulator,OS=13.3,name=iPhone 6s",
       ],
       max_concurrent_simulators: 2,
-      xcconfig: options[:test],
+      xcargs: "OTHER_SWIFT_FLAGS=-D#{options[:test]}",
     )
   end
 
