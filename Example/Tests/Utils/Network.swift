@@ -10,6 +10,8 @@ import Moya
 
 enum GitHubAPI {
 
+    case getGist(gistId: String)
+
     case updateGist(gistId: String, file: URL)
 }
 
@@ -21,6 +23,8 @@ extension GitHubAPI: TargetType {
 
     var path: String {
         switch self {
+        case let .getGist(gistId):
+            return "/gists/\(gistId)"
         case let .updateGist(gistId, _):
             return "/gists/\(gistId)"
         default:
@@ -32,6 +36,8 @@ extension GitHubAPI: TargetType {
 
     var method: Method {
         switch self {
+        case .getGist:
+            return .get
         case .updateGist:
             return .patch
         default:
@@ -47,6 +53,8 @@ extension GitHubAPI: TargetType {
 
     var task: Task {
         switch self {
+        case .getGist:
+            return .requestPlain
         case let .updateGist(_, file):
             do {
                 let fileName = file.lastPathComponent
