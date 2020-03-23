@@ -16,13 +16,15 @@ System module with CaseIterable.
 
 ## Example
 
-To run the example project, clone the repo, and run `xcodegen && pod install && open CaseIterable.xcworkspace` from the Example directory first.
+To run the example project, clone the repo, and run `bundle install && bundle exec fastlane setup && open Example/CaseIterable.xcworkspace` from the Project directory first.
 
 ## Requirements
 
-- CocoaPods >= 1.7.2
-- Swift >= 5.0
-- Xcode >= 10.2
+- Bundler
+- CocoaPods
+- fastlane
+- Swift
+- Xcode
 - XcodeGen
 
 ## Author

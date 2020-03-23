@@ -1,16 +1,33 @@
 PODS:
-  - CaseIterable (0.2.1)
+  - Alamofire (5.0.2)
+  - CaseIterable (0.2.2)
+  - DeviceKit (3.0.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
 
 DEPENDENCIES:
   - CaseIterable (from `../`)
+  - DeviceKit
+  - Moya
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DeviceKit
+    - Moya
 
 EXTERNAL SOURCES:
   CaseIterable:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CaseIterable: 140dea8ee91157f34bfb275052fe9f40dde59678
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  CaseIterable: 17d927546a370bc9eaa82082753f5f8a1f11e6f4
+  DeviceKit: fc3c2bd361a8d68d8a91eb715e453aede57317e5
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
 
-PODFILE CHECKSUM: c370acb5622dd02b6c145f0fd6c6e911eb2e6b33
+PODFILE CHECKSUM: 8f4140ef14a748f78a875ac708aa863ceddcc552
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.0

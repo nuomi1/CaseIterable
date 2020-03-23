@@ -3,6 +3,7 @@
 //  CaseIterable
 //
 //  Created by nuomi1 on 27/7/2019.
+//  Copyright © 2019 nuomi1. All rights reserved.
 //
 
 import UIKit
@@ -13,523 +14,855 @@ extension UIFont {
 
     // swiftlint:disable type_body_length
 
-    public enum SystemName: String, CaseIterable {
+    public enum SystemName: String {
 
-        // MARK: Academy Engraved LET
-
+        @available(iOS, introduced: 10.3)
         case academyEngravedLetPlain = "AcademyEngravedLetPlain"
 
-        // MARK: Al Nile
-
+        @available(iOS, introduced: 10.3)
         case alNile = "AlNile"
+
+        @available(iOS, introduced: 10.3)
         case alNileBold = "AlNile-Bold"
 
-        // MARK: American Typewriter
-
-        case americanTypewriterCondensedBold = "AmericanTypewriter-CondensedBold"
-        case americanTypewriterCondensed = "AmericanTypewriter-Condensed"
-        case americanTypewriterCondensedLight = "AmericanTypewriter-CondensedLight"
+        @available(iOS, introduced: 10.3)
         case americanTypewriter = "AmericanTypewriter"
+
+        @available(iOS, introduced: 10.3)
         case americanTypewriterBold = "AmericanTypewriter-Bold"
-        case americanTypewriterSemibold = "AmericanTypewriter-Semibold"
+
+        @available(iOS, introduced: 10.3)
+        case americanTypewriterCondensed = "AmericanTypewriter-Condensed"
+
+        @available(iOS, introduced: 10.3)
+        case americanTypewriterCondensedBold = "AmericanTypewriter-CondensedBold"
+
+        @available(iOS, introduced: 10.3)
+        case americanTypewriterCondensedLight = "AmericanTypewriter-CondensedLight"
+
+        @available(iOS, introduced: 10.3)
         case americanTypewriterLight = "AmericanTypewriter-Light"
 
-        // MARK: Apple Color Emoji
+        @available(iOS, introduced: 10.3)
+        case americanTypewriterSemibold = "AmericanTypewriter-Semibold"
 
+        @available(iOS, introduced: 10.3)
         case appleColorEmoji = "AppleColorEmoji"
 
-        // MARK: Apple SD Gothic Neo
-
-        case appleSDGothicNeoThin = "AppleSDGothicNeo-Thin"
-        case appleSDGothicNeoLight = "AppleSDGothicNeo-Light"
-        case appleSDGothicNeoRegular = "AppleSDGothicNeo-Regular"
+        @available(iOS, introduced: 10.3)
         case appleSDGothicNeoBold = "AppleSDGothicNeo-Bold"
-        case appleSDGothicNeoSemiBold = "AppleSDGothicNeo-SemiBold"
-        case appleSDGothicNeoUltraLight = "AppleSDGothicNeo-UltraLight"
+
+        @available(iOS, introduced: 10.3)
+        case appleSDGothicNeoLight = "AppleSDGothicNeo-Light"
+
+        @available(iOS, introduced: 10.3)
         case appleSDGothicNeoMedium = "AppleSDGothicNeo-Medium"
 
-        // MARK: Apple Symbols
+        @available(iOS, introduced: 10.3)
+        case appleSDGothicNeoRegular = "AppleSDGothicNeo-Regular"
 
+        @available(iOS, introduced: 10.3)
+        case appleSDGothicNeoSemiBold = "AppleSDGothicNeo-SemiBold"
+
+        @available(iOS, introduced: 10.3)
+        case appleSDGothicNeoThin = "AppleSDGothicNeo-Thin"
+
+        @available(iOS, introduced: 10.3)
+        case appleSDGothicNeoUltraLight = "AppleSDGothicNeo-UltraLight"
+
+        @available(iOS, introduced: 13.1)
         case appleSymbols = "AppleSymbols"
 
-        // MARK: Arial
-
-        case arialBoldMT = "Arial-BoldMT"
+        @available(iOS, introduced: 10.3)
         case arialBoldItalicMT = "Arial-BoldItalicMT"
+
+        @available(iOS, introduced: 10.3)
+        case arialBoldMT = "Arial-BoldMT"
+
+        @available(iOS, introduced: 10.3)
         case arialItalicMT = "Arial-ItalicMT"
-        case arialMT = "ArialMT"
 
-        // MARK: Arial Hebrew
-
-        case arialHebrewBold = "ArialHebrew-Bold"
-        case arialHebrewLight = "ArialHebrew-Light"
+        @available(iOS, introduced: 10.3)
         case arialHebrew = "ArialHebrew"
 
-        // MARK: Arial Rounded MT Bold
+        @available(iOS, introduced: 10.3)
+        case arialHebrewBold = "ArialHebrew-Bold"
 
+        @available(iOS, introduced: 10.3)
+        case arialHebrewLight = "ArialHebrew-Light"
+
+        @available(iOS, introduced: 10.3)
+        case arialMT = "ArialMT"
+
+        @available(iOS, introduced: 10.3)
         case arialRoundedMTBold = "ArialRoundedMTBold"
 
-        // MARK: Avenir
-
-        case avenirOblique = "Avenir-Oblique"
-        case avenirHeavyOblique = "Avenir-HeavyOblique"
-        case avenirHeavy = "Avenir-Heavy"
-        case avenirBlackOblique = "Avenir-BlackOblique"
-        case avenirBookOblique = "Avenir-BookOblique"
-        case avenirRoman = "Avenir-Roman"
-        case avenirMedium = "Avenir-Medium"
+        @available(iOS, introduced: 10.3)
         case avenirBlack = "Avenir-Black"
-        case avenirLight = "Avenir-Light"
-        case avenirMediumOblique = "Avenir-MediumOblique"
+
+        @available(iOS, introduced: 10.3)
+        case avenirBlackOblique = "Avenir-BlackOblique"
+
+        @available(iOS, introduced: 10.3)
         case avenirBook = "Avenir-Book"
+
+        @available(iOS, introduced: 10.3)
+        case avenirBookOblique = "Avenir-BookOblique"
+
+        @available(iOS, introduced: 10.3)
+        case avenirHeavy = "Avenir-Heavy"
+
+        @available(iOS, introduced: 10.3)
+        case avenirHeavyOblique = "Avenir-HeavyOblique"
+
+        @available(iOS, introduced: 10.3)
+        case avenirLight = "Avenir-Light"
+
+        @available(iOS, introduced: 10.3)
         case avenirLightOblique = "Avenir-LightOblique"
 
-        // MARK: Avenir Next
+        @available(iOS, introduced: 10.3)
+        case avenirMedium = "Avenir-Medium"
 
-        case avenirNextMedium = "AvenirNext-Medium"
-        case avenirNextDemiBoldItalic = "AvenirNext-DemiBoldItalic"
-        case avenirNextDemiBold = "AvenirNext-DemiBold"
-        case avenirNextHeavyItalic = "AvenirNext-HeavyItalic"
-        case avenirNextRegular = "AvenirNext-Regular"
-        case avenirNextItalic = "AvenirNext-Italic"
-        case avenirNextMediumItalic = "AvenirNext-MediumItalic"
-        case avenirNextUltraLightItalic = "AvenirNext-UltraLightItalic"
-        case avenirNextBoldItalic = "AvenirNext-BoldItalic"
-        case avenirNextHeavy = "AvenirNext-Heavy"
+        @available(iOS, introduced: 10.3)
+        case avenirMediumOblique = "Avenir-MediumOblique"
+
+        @available(iOS, introduced: 10.3)
+        case avenirOblique = "Avenir-Oblique"
+
+        @available(iOS, introduced: 10.3)
+        case avenirRoman = "Avenir-Roman"
+
+        @available(iOS, introduced: 10.3)
         case avenirNextBold = "AvenirNext-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextBoldItalic = "AvenirNext-BoldItalic"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextDemiBold = "AvenirNext-DemiBold"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextDemiBoldItalic = "AvenirNext-DemiBoldItalic"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextHeavy = "AvenirNext-Heavy"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextHeavyItalic = "AvenirNext-HeavyItalic"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextItalic = "AvenirNext-Italic"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextMedium = "AvenirNext-Medium"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextMediumItalic = "AvenirNext-MediumItalic"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextRegular = "AvenirNext-Regular"
+
+        @available(iOS, introduced: 10.3)
         case avenirNextUltraLight = "AvenirNext-UltraLight"
 
-        // MARK: Avenir Next Condensed
+        @available(iOS, introduced: 10.3)
+        case avenirNextUltraLightItalic = "AvenirNext-UltraLightItalic"
 
-        case avenirNextCondensedHeavy = "AvenirNextCondensed-Heavy"
-        case avenirNextCondensedMediumItalic = "AvenirNextCondensed-MediumItalic"
-        case avenirNextCondensedRegular = "AvenirNextCondensed-Regular"
-        case avenirNextCondensedUltraLightItalic = "AvenirNextCondensed-UltraLightItalic"
-        case avenirNextCondensedMedium = "AvenirNextCondensed-Medium"
-        case avenirNextCondensedHeavyItalic = "AvenirNextCondensed-HeavyItalic"
-        case avenirNextCondensedDemiBoldItalic = "AvenirNextCondensed-DemiBoldItalic"
+        @available(iOS, introduced: 10.3)
         case avenirNextCondensedBold = "AvenirNextCondensed-Bold"
-        case avenirNextCondensedDemiBold = "AvenirNextCondensed-DemiBold"
+
+        @available(iOS, introduced: 10.3)
         case avenirNextCondensedBoldItalic = "AvenirNextCondensed-BoldItalic"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextCondensedDemiBold = "AvenirNextCondensed-DemiBold"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextCondensedDemiBoldItalic = "AvenirNextCondensed-DemiBoldItalic"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextCondensedHeavy = "AvenirNextCondensed-Heavy"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextCondensedHeavyItalic = "AvenirNextCondensed-HeavyItalic"
+
+        @available(iOS, introduced: 10.3)
         case avenirNextCondensedItalic = "AvenirNextCondensed-Italic"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextCondensedMedium = "AvenirNextCondensed-Medium"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextCondensedMediumItalic = "AvenirNextCondensed-MediumItalic"
+
+        @available(iOS, introduced: 10.3)
+        case avenirNextCondensedRegular = "AvenirNextCondensed-Regular"
+
+        @available(iOS, introduced: 10.3)
         case avenirNextCondensedUltraLight = "AvenirNextCondensed-UltraLight"
 
-        // MARK: Baskerville
+        @available(iOS, introduced: 10.3)
+        case avenirNextCondensedUltraLightItalic = "AvenirNextCondensed-UltraLightItalic"
 
-        case baskervilleSemiBoldItalic = "Baskerville-SemiBoldItalic"
-        case baskervilleSemiBold = "Baskerville-SemiBold"
-        case baskervilleBoldItalic = "Baskerville-BoldItalic"
+        @available(iOS, introduced: 10.3)
         case baskerville = "Baskerville"
+
+        @available(iOS, introduced: 10.3)
         case baskervilleBold = "Baskerville-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case baskervilleBoldItalic = "Baskerville-BoldItalic"
+
+        @available(iOS, introduced: 10.3)
         case baskervilleItalic = "Baskerville-Italic"
 
-        // MARK: Bodoni 72
+        @available(iOS, introduced: 10.3)
+        case baskervilleSemiBold = "Baskerville-SemiBold"
 
-        case bodoniSvtyTwoITCTTBold = "BodoniSvtyTwoITCTT-Bold"
-        case bodoniSvtyTwoITCTTBookIta = "BodoniSvtyTwoITCTT-BookIta"
-        case bodoniSvtyTwoITCTTBook = "BodoniSvtyTwoITCTT-Book"
+        @available(iOS, introduced: 10.3)
+        case baskervilleSemiBoldItalic = "Baskerville-SemiBoldItalic"
 
-        // MARK: Bodoni 72 Oldstyle
-
-        case bodoniSvtyTwoOSITCTTBookIt = "BodoniSvtyTwoOSITCTT-BookIt"
-        case bodoniSvtyTwoOSITCTTBook = "BodoniSvtyTwoOSITCTT-Book"
-        case bodoniSvtyTwoOSITCTTBold = "BodoniSvtyTwoOSITCTT-Bold"
-
-        // MARK: Bodoni 72 Smallcaps
-
-        case bodoniSvtyTwoSCITCTTBook = "BodoniSvtyTwoSCITCTT-Book"
-
-        // MARK: Bodoni Ornaments
-
+        @available(iOS, introduced: 10.3)
         case bodoniOrnamentsITCTT = "BodoniOrnamentsITCTT"
 
-        // MARK: Bradley Hand
+        @available(iOS, introduced: 10.3)
+        case bodoniSvtyTwoITCTTBold = "BodoniSvtyTwoITCTT-Bold"
 
+        @available(iOS, introduced: 10.3)
+        case bodoniSvtyTwoITCTTBook = "BodoniSvtyTwoITCTT-Book"
+
+        @available(iOS, introduced: 10.3)
+        case bodoniSvtyTwoITCTTBookIta = "BodoniSvtyTwoITCTT-BookIta"
+
+        @available(iOS, introduced: 10.3)
+        case bodoniSvtyTwoOSITCTTBold = "BodoniSvtyTwoOSITCTT-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case bodoniSvtyTwoOSITCTTBook = "BodoniSvtyTwoOSITCTT-Book"
+
+        @available(iOS, introduced: 10.3)
+        case bodoniSvtyTwoOSITCTTBookIt = "BodoniSvtyTwoOSITCTT-BookIt"
+
+        @available(iOS, introduced: 10.3)
+        case bodoniSvtyTwoSCITCTTBook = "BodoniSvtyTwoSCITCTT-Book"
+
+        @available(iOS, introduced: 10.3)
         case bradleyHandITCTTBold = "BradleyHandITCTT-Bold"
 
-        // MARK: Chalkboard SE
-
+        @available(iOS, introduced: 10.3)
         case chalkboardSEBold = "ChalkboardSE-Bold"
+
+        @available(iOS, introduced: 10.3)
         case chalkboardSELight = "ChalkboardSE-Light"
+
+        @available(iOS, introduced: 10.3)
         case chalkboardSERegular = "ChalkboardSE-Regular"
 
-        // MARK: Chalkduster
-
+        @available(iOS, introduced: 10.3)
         case chalkduster = "Chalkduster"
 
-        // MARK: Charter
-
-        case charterBlackItalic = "Charter-BlackItalic"
-        case charterBold = "Charter-Bold"
-        case charterRoman = "Charter-Roman"
+        @available(iOS, introduced: 11.3)
         case charterBlack = "Charter-Black"
+
+        @available(iOS, introduced: 11.3)
+        case charterBlackItalic = "Charter-BlackItalic"
+
+        @available(iOS, introduced: 11.3)
+        case charterBold = "Charter-Bold"
+
+        @available(iOS, introduced: 11.3)
         case charterBoldItalic = "Charter-BoldItalic"
+
+        @available(iOS, introduced: 11.3)
         case charterItalic = "Charter-Italic"
 
-        // MARK: Cochin
+        @available(iOS, introduced: 11.3)
+        case charterRoman = "Charter-Roman"
 
-        case cochinItalic = "Cochin-Italic"
-        case cochinBold = "Cochin-Bold"
+        @available(iOS, introduced: 10.3)
         case cochin = "Cochin"
+
+        @available(iOS, introduced: 10.3)
+        case cochinBold = "Cochin-Bold"
+
+        @available(iOS, introduced: 10.3)
         case cochinBoldItalic = "Cochin-BoldItalic"
 
-        // MARK: Copperplate
+        @available(iOS, introduced: 10.3)
+        case cochinItalic = "Cochin-Italic"
 
-        case copperplateLight = "Copperplate-Light"
+        @available(iOS, introduced: 10.3)
         case copperplate = "Copperplate"
+
+        @available(iOS, introduced: 10.3)
         case copperplateBold = "Copperplate-Bold"
 
-        // MARK: Courier
+        @available(iOS, introduced: 10.3)
+        case copperplateLight = "Copperplate-Light"
 
-        case courierBoldOblique = "Courier-BoldOblique"
-        case courierOblique = "Courier-Oblique"
+        @available(iOS, introduced: 10.3)
         case courier = "Courier"
+
+        @available(iOS, introduced: 10.3)
         case courierBold = "Courier-Bold"
 
-        // MARK: Courier New
+        @available(iOS, introduced: 10.3)
+        case courierBoldOblique = "Courier-BoldOblique"
 
-        case courierNewPSItalicMT = "CourierNewPS-ItalicMT"
-        case courierNewPSMT = "CourierNewPSMT"
+        @available(iOS, introduced: 10.3)
+        case courierOblique = "Courier-Oblique"
+
+        @available(iOS, introduced: 10.3)
         case courierNewPSBoldItalicMT = "CourierNewPS-BoldItalicMT"
+
+        @available(iOS, introduced: 10.3)
         case courierNewPSBoldMT = "CourierNewPS-BoldMT"
 
-        // MARK: DIN Alternate
+        @available(iOS, introduced: 10.3)
+        case courierNewPSItalicMT = "CourierNewPS-ItalicMT"
 
+        @available(iOS, introduced: 10.3)
+        case courierNewPSMT = "CourierNewPSMT"
+
+        @available(iOS, introduced: 11.3)
         case dINAlternateBold = "DINAlternate-Bold"
 
-        // MARK: DIN Condensed
-
+        @available(iOS, introduced: 11.3)
         case dINCondensedBold = "DINCondensed-Bold"
 
-        // MARK: Damascus
-
-        case damascusBold = "DamascusBold"
-        case damascusLight = "DamascusLight"
+        @available(iOS, introduced: 10.3)
         case damascus = "Damascus"
+
+        @available(iOS, introduced: 10.3)
+        case damascusBold = "DamascusBold"
+
+        @available(iOS, introduced: 10.3)
+        case damascusLight = "DamascusLight"
+
+        @available(iOS, introduced: 10.3)
         case damascusMedium = "DamascusMedium"
+
+        @available(iOS, introduced: 10.3)
         case damascusSemiBold = "DamascusSemiBold"
 
-        // MARK: Devanagari Sangam MN
-
+        @available(iOS, introduced: 10.3)
         case devanagariSangamMN = "DevanagariSangamMN"
+
+        @available(iOS, introduced: 10.3)
         case devanagariSangamMNBold = "DevanagariSangamMN-Bold"
 
-        // MARK: Didot
-
-        case didotBold = "Didot-Bold"
+        @available(iOS, introduced: 10.3)
         case didot = "Didot"
+
+        @available(iOS, introduced: 10.3)
+        case didotBold = "Didot-Bold"
+
+        @available(iOS, introduced: 10.3)
         case didotItalic = "Didot-Italic"
 
-        // MARK: Euphemia UCAS
-
-        case euphemiaUCAS = "EuphemiaUCAS"
-        case euphemiaUCASItalic = "EuphemiaUCAS-Italic"
-        case euphemiaUCASBold = "EuphemiaUCAS-Bold"
-
-        // MARK: Farah
-
-        case farah = "Farah"
-
-        // MARK: Futura
-
-        case futuraCondensedExtraBold = "Futura-CondensedExtraBold"
-        case futuraMedium = "Futura-Medium"
-        case futuraBold = "Futura-Bold"
-        case futuraCondensedMedium = "Futura-CondensedMedium"
-        case futuraMediumItalic = "Futura-MediumItalic"
-
-        // MARK: Galvji
-
-        case galvjiBold = "Galvji-Bold"
-        case galvji = "Galvji"
-
-        // MARK: Geeza Pro
-
-        case geezaProBold = "GeezaPro-Bold"
-        case geezaPro = "GeezaPro"
-
-        // MARK: Georgia
-
-        case georgiaBoldItalic = "Georgia-BoldItalic"
-        case georgiaItalic = "Georgia-Italic"
-        case georgia = "Georgia"
-        case georgiaBold = "Georgia-Bold"
-
-        // MARK: Gill Sans
-
-        case gillSansItalic = "GillSans-Italic"
-        case gillSansSemiBold = "GillSans-SemiBold"
-        case gillSansUltraBold = "GillSans-UltraBold"
-        case gillSansLight = "GillSans-Light"
-        case gillSansBold = "GillSans-Bold"
-        case gillSans = "GillSans"
-        case gillSansSemiBoldItalic = "GillSans-SemiBoldItalic"
-        case gillSansBoldItalic = "GillSans-BoldItalic"
-        case gillSansLightItalic = "GillSans-LightItalic"
-
-        // MARK: Helvetica
-
-        case helveticaOblique = "Helvetica-Oblique"
-        case helveticaBoldOblique = "Helvetica-BoldOblique"
-        case helvetica = "Helvetica"
-        case helveticaLight = "Helvetica-Light"
-        case helveticaBold = "Helvetica-Bold"
-        case helveticaLightOblique = "Helvetica-LightOblique"
-
-        // MARK: Helvetica Neue
-
-        case helveticaNeueUltraLightItalic = "HelveticaNeue-UltraLightItalic"
-        case helveticaNeueMedium = "HelveticaNeue-Medium"
-        case helveticaNeueMediumItalic = "HelveticaNeue-MediumItalic"
-        case helveticaNeueUltraLight = "HelveticaNeue-UltraLight"
-        case helveticaNeueItalic = "HelveticaNeue-Italic"
-        case helveticaNeueLight = "HelveticaNeue-Light"
-        case helveticaNeueThinItalic = "HelveticaNeue-ThinItalic"
-        case helveticaNeueLightItalic = "HelveticaNeue-LightItalic"
-        case helveticaNeueBold = "HelveticaNeue-Bold"
-        case helveticaNeueThin = "HelveticaNeue-Thin"
-        case helveticaNeueCondensedBlack = "HelveticaNeue-CondensedBlack"
-        case helveticaNeue = "HelveticaNeue"
-        case helveticaNeueCondensedBold = "HelveticaNeue-CondensedBold"
-        case helveticaNeueBoldItalic = "HelveticaNeue-BoldItalic"
-
-        // MARK: Hiragino Maru Gothic ProN
-
-        case hiraMaruProNW4 = "HiraMaruProN-W4"
-
-        // MARK: Hiragino Mincho ProN
-
-        case hiraMinProNW3 = "HiraMinProN-W3"
-        case hiraMinProNW6 = "HiraMinProN-W6"
-
-        // MARK: Hiragino Sans
-
-        case hiraginoSansW3 = "HiraginoSans-W3"
-        case hiraginoSansW6 = "HiraginoSans-W6"
-        case hiraginoSansW7 = "HiraginoSans-W7"
-
-        // MARK: Hoefler Text
-
-        case hoeflerTextItalic = "HoeflerText-Italic"
-        case hoeflerTextBlack = "HoeflerText-Black"
-        case hoeflerTextRegular = "HoeflerText-Regular"
-        case hoeflerTextBlackItalic = "HoeflerText-BlackItalic"
-
-        // MARK: Kailasa
-
-        case kailasaBold = "Kailasa-Bold"
-        case kailasa = "Kailasa"
-
-        // MARK: Kefa
-
-        case kefaRegular = "Kefa-Regular"
-
-        // MARK: Khmer Sangam MN
-
-        case khmerSangamMN = "KhmerSangamMN"
-
-        // MARK: Kohinoor Bangla
-
-        case kohinoorBanglaRegular = "KohinoorBangla-Regular"
-        case kohinoorBanglaSemibold = "KohinoorBangla-Semibold"
-        case kohinoorBanglaLight = "KohinoorBangla-Light"
-
-        // MARK: Kohinoor Devanagari
-
-        case kohinoorDevanagariRegular = "KohinoorDevanagari-Regular"
-        case kohinoorDevanagariLight = "KohinoorDevanagari-Light"
-        case kohinoorDevanagariSemibold = "KohinoorDevanagari-Semibold"
-
-        // MARK: Kohinoor Gujarati
-
-        case kohinoorGujaratiLight = "KohinoorGujarati-Light"
-        case kohinoorGujaratiBold = "KohinoorGujarati-Bold"
-        case kohinoorGujaratiRegular = "KohinoorGujarati-Regular"
-
-        // MARK: Kohinoor Telugu
-
-        case kohinoorTeluguRegular = "KohinoorTelugu-Regular"
-        case kohinoorTeluguMedium = "KohinoorTelugu-Medium"
-        case kohinoorTeluguLight = "KohinoorTelugu-Light"
-
-        // MARK: Lao Sangam MN
-
-        case laoSangamMN = "LaoSangamMN"
-
-        // MARK: Malayalam Sangam MN
-
-        case malayalamSangamMNBold = "MalayalamSangamMN-Bold"
-        case malayalamSangamMN = "MalayalamSangamMN"
-
-        // MARK: Marker Felt
-
-        case markerFeltThin = "MarkerFelt-Thin"
-        case markerFeltWide = "MarkerFelt-Wide"
-
-        // MARK: Menlo
-
-        case menloBoldItalic = "Menlo-BoldItalic"
-        case menloBold = "Menlo-Bold"
-        case menloItalic = "Menlo-Italic"
-        case menloRegular = "Menlo-Regular"
-
-        // MARK: Mishafi
-
+        @available(iOS, introduced: 10.3)
         case diwanMishafi = "DiwanMishafi"
 
-        // MARK: Mukta Mahee
+        @available(iOS, introduced: 10.3)
+        case euphemiaUCAS = "EuphemiaUCAS"
 
-        case muktaMaheeLight = "MuktaMahee-Light"
+        @available(iOS, introduced: 10.3)
+        case euphemiaUCASBold = "EuphemiaUCAS-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case euphemiaUCASItalic = "EuphemiaUCAS-Italic"
+
+        @available(iOS, introduced: 10.3)
+        case farah = "Farah"
+
+        @available(iOS, introduced: 10.3)
+        case futuraBold = "Futura-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case futuraCondensedExtraBold = "Futura-CondensedExtraBold"
+
+        @available(iOS, introduced: 10.3)
+        case futuraCondensedMedium = "Futura-CondensedMedium"
+
+        @available(iOS, introduced: 10.3)
+        case futuraMedium = "Futura-Medium"
+
+        @available(iOS, introduced: 10.3)
+        case futuraMediumItalic = "Futura-MediumItalic"
+
+        @available(iOS, introduced: 13.1)
+        case galvji = "Galvji"
+
+        @available(iOS, introduced: 13.1)
+        case galvjiBold = "Galvji-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case geezaPro = "GeezaPro"
+
+        @available(iOS, introduced: 10.3)
+        case geezaProBold = "GeezaPro-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case georgia = "Georgia"
+
+        @available(iOS, introduced: 10.3)
+        case georgiaBold = "Georgia-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case georgiaBoldItalic = "Georgia-BoldItalic"
+
+        @available(iOS, introduced: 10.3)
+        case georgiaItalic = "Georgia-Italic"
+
+        @available(iOS, introduced: 10.3)
+        case gillSans = "GillSans"
+
+        @available(iOS, introduced: 10.3)
+        case gillSansBold = "GillSans-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case gillSansBoldItalic = "GillSans-BoldItalic"
+
+        @available(iOS, introduced: 10.3)
+        case gillSansItalic = "GillSans-Italic"
+
+        @available(iOS, introduced: 10.3)
+        case gillSansLight = "GillSans-Light"
+
+        @available(iOS, introduced: 10.3)
+        case gillSansLightItalic = "GillSans-LightItalic"
+
+        @available(iOS, introduced: 10.3)
+        case gillSansSemiBold = "GillSans-SemiBold"
+
+        @available(iOS, introduced: 10.3)
+        case gillSansSemiBoldItalic = "GillSans-SemiBoldItalic"
+
+        @available(iOS, introduced: 10.3)
+        case gillSansUltraBold = "GillSans-UltraBold"
+
+        @available(iOS, introduced: 10.3, deprecated: 12.5)
+        case gujaratiSangamMN = "GujaratiSangamMN"
+
+        @available(iOS, introduced: 10.3, deprecated: 12.5)
+        case gujaratiSangamMNBold = "GujaratiSangamMN-Bold"
+
+        @available(iOS, introduced: 10.3, deprecated: 12.5)
+        case gurmukhiMN = "GurmukhiMN"
+
+        @available(iOS, introduced: 10.3, deprecated: 12.5)
+        case gurmukhiMNBold = "GurmukhiMN-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case helvetica = "Helvetica"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaBold = "Helvetica-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaBoldOblique = "Helvetica-BoldOblique"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaLight = "Helvetica-Light"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaLightOblique = "Helvetica-LightOblique"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaOblique = "Helvetica-Oblique"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeue = "HelveticaNeue"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueBold = "HelveticaNeue-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueBoldItalic = "HelveticaNeue-BoldItalic"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueCondensedBlack = "HelveticaNeue-CondensedBlack"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueCondensedBold = "HelveticaNeue-CondensedBold"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueItalic = "HelveticaNeue-Italic"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueLight = "HelveticaNeue-Light"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueLightItalic = "HelveticaNeue-LightItalic"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueMedium = "HelveticaNeue-Medium"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueMediumItalic = "HelveticaNeue-MediumItalic"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueThin = "HelveticaNeue-Thin"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueThinItalic = "HelveticaNeue-ThinItalic"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueUltraLight = "HelveticaNeue-UltraLight"
+
+        @available(iOS, introduced: 10.3)
+        case helveticaNeueUltraLightItalic = "HelveticaNeue-UltraLightItalic"
+
+        @available(iOS, introduced: 11.0)
+        case hiraMaruProNW4 = "HiraMaruProN-W4"
+
+        @available(iOS, introduced: 10.3)
+        case hiraMinProNW3 = "HiraMinProN-W3"
+
+        @available(iOS, introduced: 10.3)
+        case hiraMinProNW6 = "HiraMinProN-W6"
+
+        @available(iOS, introduced: 10.3)
+        case hiraginoSansW3 = "HiraginoSans-W3"
+
+        @available(iOS, introduced: 10.3)
+        case hiraginoSansW6 = "HiraginoSans-W6"
+
+        @available(iOS, introduced: 13.1)
+        case hiraginoSansW7 = "HiraginoSans-W7"
+
+        @available(iOS, introduced: 10.3)
+        case hoeflerTextBlack = "HoeflerText-Black"
+
+        @available(iOS, introduced: 10.3)
+        case hoeflerTextBlackItalic = "HoeflerText-BlackItalic"
+
+        @available(iOS, introduced: 10.3)
+        case hoeflerTextItalic = "HoeflerText-Italic"
+
+        @available(iOS, introduced: 10.3)
+        case hoeflerTextRegular = "HoeflerText-Regular"
+
+        @available(iOS, introduced: 10.3)
+        case kailasa = "Kailasa"
+
+        @available(iOS, introduced: 10.3)
+        case kailasaBold = "Kailasa-Bold"
+
+        @available(iOS, introduced: 10.3, deprecated: 12.5)
+        case kannadaSangamMN = "KannadaSangamMN"
+
+        @available(iOS, introduced: 10.3, deprecated: 12.5)
+        case kannadaSangamMNBold = "KannadaSangamMN-Bold"
+
+        @available(iOS, introduced: 11.0)
+        case kefaRegular = "Kefa-Regular"
+
+        @available(iOS, introduced: 10.3)
+        case khmerSangamMN = "KhmerSangamMN"
+
+        @available(iOS, introduced: 10.3)
+        case kohinoorBanglaLight = "KohinoorBangla-Light"
+
+        @available(iOS, introduced: 10.3)
+        case kohinoorBanglaRegular = "KohinoorBangla-Regular"
+
+        @available(iOS, introduced: 10.3)
+        case kohinoorBanglaSemibold = "KohinoorBangla-Semibold"
+
+        @available(iOS, introduced: 10.3)
+        case kohinoorDevanagariLight = "KohinoorDevanagari-Light"
+
+        @available(iOS, introduced: 10.3)
+        case kohinoorDevanagariRegular = "KohinoorDevanagari-Regular"
+
+        @available(iOS, introduced: 10.3)
+        case kohinoorDevanagariSemibold = "KohinoorDevanagari-Semibold"
+
+        @available(iOS, introduced: 13.1)
+        case kohinoorGujaratiBold = "KohinoorGujarati-Bold"
+
+        @available(iOS, introduced: 13.1)
+        case kohinoorGujaratiLight = "KohinoorGujarati-Light"
+
+        @available(iOS, introduced: 13.1)
+        case kohinoorGujaratiRegular = "KohinoorGujarati-Regular"
+
+        @available(iOS, introduced: 10.3)
+        case kohinoorTeluguLight = "KohinoorTelugu-Light"
+
+        @available(iOS, introduced: 10.3)
+        case kohinoorTeluguMedium = "KohinoorTelugu-Medium"
+
+        @available(iOS, introduced: 10.3)
+        case kohinoorTeluguRegular = "KohinoorTelugu-Regular"
+
+        @available(iOS, introduced: 10.3)
+        case laoSangamMN = "LaoSangamMN"
+
+        @available(iOS, introduced: 10.3)
+        case malayalamSangamMN = "MalayalamSangamMN"
+
+        @available(iOS, introduced: 10.3)
+        case malayalamSangamMNBold = "MalayalamSangamMN-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case markerFeltThin = "MarkerFelt-Thin"
+
+        @available(iOS, introduced: 10.3)
+        case markerFeltWide = "MarkerFelt-Wide"
+
+        @available(iOS, introduced: 10.3)
+        case menloBold = "Menlo-Bold"
+
+        @available(iOS, introduced: 10.3)
+        case menloBoldItalic = "Menlo-BoldItalic"
+
+        @available(iOS, introduced: 10.3)
+        case menloItalic = "Menlo-Italic"
+
+        @available(iOS, introduced: 10.3)
+        case menloRegular = "Menlo-Regular"
+
+        @available(iOS, introduced: 13.1)
         case muktaMaheeBold = "MuktaMahee-Bold"
+
+        @available(iOS, introduced: 13.1)
+        case muktaMaheeLight = "MuktaMahee-Light"
+
+        @available(iOS, introduced: 13.1)
         case muktaMaheeRegular = "MuktaMahee-Regular"
 
-        // MARK: Myanmar Sangam MN
-
+        @available(iOS, introduced: 10.3)
         case myanmarSangamMN = "MyanmarSangamMN"
+
+        @available(iOS, introduced: 10.3)
         case myanmarSangamMNBold = "MyanmarSangamMN-Bold"
 
-        // MARK: Noteworthy
-
+        @available(iOS, introduced: 10.3)
         case noteworthyBold = "Noteworthy-Bold"
+
+        @available(iOS, introduced: 10.3)
         case noteworthyLight = "Noteworthy-Light"
 
-        // MARK: Noto Nastaliq Urdu
-
+        @available(iOS, introduced: 11.0)
         case notoNastaliqUrdu = "NotoNastaliqUrdu"
+
+        @available(iOS, introduced: 13.1)
         case notoNastaliqUrduBold = "NotoNastaliqUrdu-Bold"
 
-        // MARK: Noto Sans Kannada
+        @available(iOS, introduced: 12.0, deprecated: 12.5)
+        case notoSansChakmaRegular = "NotoSansChakma-Regular"
 
+        @available(iOS, introduced: 13.1)
         case notoSansKannadaBold = "NotoSansKannada-Bold"
+
+        @available(iOS, introduced: 13.1)
         case notoSansKannadaLight = "NotoSansKannada-Light"
+
+        @available(iOS, introduced: 13.1)
         case notoSansKannadaRegular = "NotoSansKannada-Regular"
 
-        // MARK: Noto Sans Myanmar
-
-        case notoSansMyanmarRegular = "NotoSansMyanmar-Regular"
+        @available(iOS, introduced: 13.1)
         case notoSansMyanmarBold = "NotoSansMyanmar-Bold"
+
+        @available(iOS, introduced: 13.1)
         case notoSansMyanmarLight = "NotoSansMyanmar-Light"
 
-        // MARK: Noto Sans Oriya
+        @available(iOS, introduced: 13.1)
+        case notoSansMyanmarRegular = "NotoSansMyanmar-Regular"
 
-        case notoSansOriyaBold = "NotoSansOriya-Bold"
+        @available(iOS, introduced: 13.1)
         case notoSansOriya = "NotoSansOriya"
 
-        // MARK: Optima
+        @available(iOS, introduced: 13.1)
+        case notoSansOriyaBold = "NotoSansOriya-Bold"
 
-        case optimaExtraBlack = "Optima-ExtraBlack"
-        case optimaBoldItalic = "Optima-BoldItalic"
-        case optimaItalic = "Optima-Italic"
-        case optimaRegular = "Optima-Regular"
+        @available(iOS, introduced: 10.3)
         case optimaBold = "Optima-Bold"
 
-        // MARK: Palatino
+        @available(iOS, introduced: 10.3)
+        case optimaBoldItalic = "Optima-BoldItalic"
 
-        case palatinoItalic = "Palatino-Italic"
-        case palatinoRoman = "Palatino-Roman"
-        case palatinoBoldItalic = "Palatino-BoldItalic"
+        @available(iOS, introduced: 10.3)
+        case optimaExtraBlack = "Optima-ExtraBlack"
+
+        @available(iOS, introduced: 10.3)
+        case optimaItalic = "Optima-Italic"
+
+        @available(iOS, introduced: 10.3)
+        case optimaRegular = "Optima-Regular"
+
+        @available(iOS, introduced: 10.3, deprecated: 12.5)
+        case oriyaSangamMN = "OriyaSangamMN"
+
+        @available(iOS, introduced: 10.3, deprecated: 12.5)
+        case oriyaSangamMNBold = "OriyaSangamMN-Bold"
+
+        @available(iOS, introduced: 10.3)
         case palatinoBold = "Palatino-Bold"
 
-        // MARK: Papyrus
+        @available(iOS, introduced: 10.3)
+        case palatinoBoldItalic = "Palatino-BoldItalic"
 
-        case papyrusCondensed = "Papyrus-Condensed"
+        @available(iOS, introduced: 10.3)
+        case palatinoItalic = "Palatino-Italic"
+
+        @available(iOS, introduced: 10.3)
+        case palatinoRoman = "Palatino-Roman"
+
+        @available(iOS, introduced: 10.3)
         case papyrus = "Papyrus"
 
-        // MARK: Party LET
+        @available(iOS, introduced: 10.3)
+        case papyrusCondensed = "Papyrus-Condensed"
 
+        @available(iOS, introduced: 10.3)
         case partyLetPlain = "PartyLetPlain"
 
-        // MARK: PingFang HK
-
-        case pingFangHKMedium = "PingFangHK-Medium"
-        case pingFangHKThin = "PingFangHK-Thin"
-        case pingFangHKRegular = "PingFangHK-Regular"
-        case pingFangHKUltralight = "PingFangHK-Ultralight"
-        case pingFangHKSemibold = "PingFangHK-Semibold"
+        @available(iOS, introduced: 10.3)
         case pingFangHKLight = "PingFangHK-Light"
 
-        // MARK: PingFang SC
+        @available(iOS, introduced: 10.3)
+        case pingFangHKMedium = "PingFangHK-Medium"
 
-        case pingFangSCMedium = "PingFangSC-Medium"
-        case pingFangSCSemibold = "PingFangSC-Semibold"
+        @available(iOS, introduced: 10.3)
+        case pingFangHKRegular = "PingFangHK-Regular"
+
+        @available(iOS, introduced: 10.3)
+        case pingFangHKSemibold = "PingFangHK-Semibold"
+
+        @available(iOS, introduced: 10.3)
+        case pingFangHKThin = "PingFangHK-Thin"
+
+        @available(iOS, introduced: 10.3)
+        case pingFangHKUltralight = "PingFangHK-Ultralight"
+
+        @available(iOS, introduced: 10.3)
         case pingFangSCLight = "PingFangSC-Light"
-        case pingFangSCUltralight = "PingFangSC-Ultralight"
+
+        @available(iOS, introduced: 10.3)
+        case pingFangSCMedium = "PingFangSC-Medium"
+
+        @available(iOS, introduced: 10.3)
         case pingFangSCRegular = "PingFangSC-Regular"
+
+        @available(iOS, introduced: 10.3)
+        case pingFangSCSemibold = "PingFangSC-Semibold"
+
+        @available(iOS, introduced: 10.3)
         case pingFangSCThin = "PingFangSC-Thin"
 
-        // MARK: PingFang TC
+        @available(iOS, introduced: 10.3)
+        case pingFangSCUltralight = "PingFangSC-Ultralight"
 
-        case pingFangTCRegular = "PingFangTC-Regular"
-        case pingFangTCThin = "PingFangTC-Thin"
-        case pingFangTCMedium = "PingFangTC-Medium"
-        case pingFangTCSemibold = "PingFangTC-Semibold"
+        @available(iOS, introduced: 10.3)
         case pingFangTCLight = "PingFangTC-Light"
+
+        @available(iOS, introduced: 10.3)
+        case pingFangTCMedium = "PingFangTC-Medium"
+
+        @available(iOS, introduced: 10.3)
+        case pingFangTCRegular = "PingFangTC-Regular"
+
+        @available(iOS, introduced: 10.3)
+        case pingFangTCSemibold = "PingFangTC-Semibold"
+
+        @available(iOS, introduced: 10.3)
+        case pingFangTCThin = "PingFangTC-Thin"
+
+        @available(iOS, introduced: 10.3)
         case pingFangTCUltralight = "PingFangTC-Ultralight"
 
-        // MARK: Rockwell
-
-        case rockwellItalic = "Rockwell-Italic"
-        case rockwellRegular = "Rockwell-Regular"
+        @available(iOS, introduced: 11.3)
         case rockwellBold = "Rockwell-Bold"
+
+        @available(iOS, introduced: 11.3)
         case rockwellBoldItalic = "Rockwell-BoldItalic"
 
-        // MARK: Savoye LET
+        @available(iOS, introduced: 11.3)
+        case rockwellItalic = "Rockwell-Italic"
 
+        @available(iOS, introduced: 11.3)
+        case rockwellRegular = "Rockwell-Regular"
+
+        @available(iOS, introduced: 10.3)
         case savoyeLetPlain = "SavoyeLetPlain"
 
-        // MARK: Sinhala Sangam MN
-
-        case sinhalaSangamMNBold = "SinhalaSangamMN-Bold"
+        @available(iOS, introduced: 10.3)
         case sinhalaSangamMN = "SinhalaSangamMN"
 
-        // MARK: Snell Roundhand
+        @available(iOS, introduced: 10.3)
+        case sinhalaSangamMNBold = "SinhalaSangamMN-Bold"
 
+        @available(iOS, introduced: 10.3)
         case snellRoundhand = "SnellRoundhand"
-        case snellRoundhandBold = "SnellRoundhand-Bold"
+
+        @available(iOS, introduced: 10.3)
         case snellRoundhandBlack = "SnellRoundhand-Black"
 
-        // MARK: Symbol
+        @available(iOS, introduced: 10.3)
+        case snellRoundhandBold = "SnellRoundhand-Bold"
 
+        @available(iOS, introduced: 10.3)
         case symbol = "Symbol"
 
-        // MARK: Tamil Sangam MN
-
+        @available(iOS, introduced: 10.3)
         case tamilSangamMN = "TamilSangamMN"
+
+        @available(iOS, introduced: 10.3)
         case tamilSangamMNBold = "TamilSangamMN-Bold"
 
-        // MARK: Thonburi
-
+        @available(iOS, introduced: 10.3)
         case thonburi = "Thonburi"
-        case thonburiLight = "Thonburi-Light"
+
+        @available(iOS, introduced: 10.3)
         case thonburiBold = "Thonburi-Bold"
 
-        // MARK: Times New Roman
+        @available(iOS, introduced: 10.3)
+        case thonburiLight = "Thonburi-Light"
 
-        case timesNewRomanPSItalicMT = "TimesNewRomanPS-ItalicMT"
+        @available(iOS, introduced: 10.3)
         case timesNewRomanPSBoldItalicMT = "TimesNewRomanPS-BoldItalicMT"
+
+        @available(iOS, introduced: 10.3)
         case timesNewRomanPSBoldMT = "TimesNewRomanPS-BoldMT"
+
+        @available(iOS, introduced: 10.3)
+        case timesNewRomanPSItalicMT = "TimesNewRomanPS-ItalicMT"
+
+        @available(iOS, introduced: 10.3)
         case timesNewRomanPSMT = "TimesNewRomanPSMT"
 
-        // MARK: Trebuchet MS
-
-        case trebuchetMSBold = "TrebuchetMS-Bold"
-        case trebuchetMSItalic = "TrebuchetMS-Italic"
+        @available(iOS, introduced: 10.3)
         case trebuchetBoldItalic = "Trebuchet-BoldItalic"
+
+        @available(iOS, introduced: 10.3)
         case trebuchetMS = "TrebuchetMS"
 
-        // MARK: Verdana
+        @available(iOS, introduced: 10.3)
+        case trebuchetMSBold = "TrebuchetMS-Bold"
 
-        case verdanaItalic = "Verdana-Italic"
+        @available(iOS, introduced: 10.3)
+        case trebuchetMSItalic = "TrebuchetMS-Italic"
+
+        @available(iOS, introduced: 10.3)
         case verdana = "Verdana"
+
+        @available(iOS, introduced: 10.3)
         case verdanaBold = "Verdana-Bold"
+
+        @available(iOS, introduced: 10.3)
         case verdanaBoldItalic = "Verdana-BoldItalic"
 
-        // MARK: Zapf Dingbats
+        @available(iOS, introduced: 10.3)
+        case verdanaItalic = "Verdana-Italic"
 
+        @available(iOS, introduced: 10.3)
         case zapfDingbatsITC = "ZapfDingbatsITC"
 
-        // MARK: Zapfino
-
+        @available(iOS, introduced: 10.3)
         case zapfino = "Zapfino"
     }
 
