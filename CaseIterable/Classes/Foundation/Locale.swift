@@ -10,7 +10,12 @@ import Foundation
 
 // swiftlint:disable file_length
 
-public extension Locale {
+extension Locale {
+
+    public enum Identifier {}
+}
+
+public extension Locale.Identifier {
 
     // swiftlint:disable identifier_name
 
