@@ -31,14 +31,19 @@ fastlane ios setup_cocoapods
 fastlane ios setup
 ```
 
-### ios scan_locale
+### ios scan_test
 ```
-fastlane ios scan_locale
+fastlane ios scan_test
 ```
 
 ### ios generate_locale_json
 ```
 fastlane ios generate_locale_json
+```
+
+### ios generate_uifont_json
+```
+fastlane ios generate_uifont_json
 ```
 
 
