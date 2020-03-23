@@ -16,11 +16,18 @@ struct IdentityInformations<T: Codable>: Codable {
 
     let systemVersion: String = Device.current.systemVersion!
 
-    let name: String
+    var name: String = ""
 
     let identifiers: T
 
     var fileName: String {
         "\(name)-\(systemName)-\(systemVersion)"
+    }
+
+    enum CodingKeys: CodingKey {
+        case systemVersion
+        case systemName
+        case model
+        case identifiers
     }
 }
