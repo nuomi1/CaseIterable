@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (5.0.2)
-  - CaseIterable (0.2.2)
+  - CaseIterable (0.3.0)
   - DeviceKit (3.0.0)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
-  CaseIterable: 17d927546a370bc9eaa82082753f5f8a1f11e6f4
+  CaseIterable: b0b3592cdcc76c2a7ef5e1a3ccad124648792fcf
   DeviceKit: fc3c2bd361a8d68d8a91eb715e453aede57317e5
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
 
