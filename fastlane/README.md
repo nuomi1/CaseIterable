@@ -41,6 +41,11 @@ fastlane ios scan_test
 fastlane ios generate_locale_json
 ```
 
+### ios generate_timezone_json
+```
+fastlane ios generate_timezone_json
+```
+
 ### ios generate_uifont_json
 ```
 fastlane ios generate_uifont_json
