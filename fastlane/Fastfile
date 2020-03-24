@@ -66,6 +66,11 @@ platform :ios do
     scan_test(test: "TEST_LOCALE")
   end
 
+  lane :generate_timezone_json do
+    setup
+    scan_test(test: "TEST_TIMEZONE")
+  end
+
   lane :generate_uifont_json do
     setup
     scan_test(test: "TEST_UIFONT")
