@@ -76,6 +76,8 @@ extension XCTestCase {
         filePath: URL,
         data: Data
     ) {
+        let exp = expectation(description: #function)
+
         let target = GitHubAPI.getGist(gistId: GitHubAPI.gistId)
 
         githubProvider.request(target) { [weak self] result in
@@ -93,12 +95,16 @@ extension XCTestCase {
             case let .failure(error):
                 XCTAssertFalse(true, error.errorDescription!)
             }
+
+            exp.fulfill()
         }
 
-        waitForExpectations(timeout: 10)
+        wait(for: [exp], timeout: 20)
     }
 
     func updateJSON(filePath: URL) {
+        let exp = expectation(description: #function)
+
         let target = GitHubAPI.updateGist(gistId: GitHubAPI.gistId, file: filePath)
 
         githubProvider.request(target) { result in
@@ -108,8 +114,10 @@ extension XCTestCase {
             case let .failure(error):
                 XCTAssertFalse(true, error.errorDescription!)
             }
+
+            exp.fulfill()
         }
 
-        waitForExpectations(timeout: 10)
+        wait(for: [exp], timeout: 20)
     }
 }
