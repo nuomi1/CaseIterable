@@ -13,7 +13,7 @@ import re
 dictionary_path = "../../Assets/Foundation/Locale/"
 
 min_version = 10.3
-max_version = 13.3
+max_version = 13.4
 
 locale_available_identifiers = {}
 
