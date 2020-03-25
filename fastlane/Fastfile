@@ -55,6 +55,7 @@ platform :ios do
         "platform=iOS Simulator,OS=13.1,name=iPhone 6s",
         "platform=iOS Simulator,OS=13.2.2,name=iPhone 6s",
         "platform=iOS Simulator,OS=13.3,name=iPhone 6s",
+        "platform=iOS Simulator,OS=13.4,name=iPhone 6s",
       ],
       max_concurrent_simulators: 2,
       xcargs: "OTHER_SWIFT_FLAGS=-D#{options[:test]}",
