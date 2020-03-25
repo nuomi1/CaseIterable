@@ -70,7 +70,7 @@ extension UIFont {
         @available(iOS, introduced: 10.3)
         case appleSDGothicNeoUltraLight = "AppleSDGothicNeo-UltraLight"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case appleSymbols = "AppleSymbols"
 
         @available(iOS, introduced: 10.3)
@@ -391,10 +391,10 @@ extension UIFont {
         @available(iOS, introduced: 10.3)
         case futuraMediumItalic = "Futura-MediumItalic"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case galvji = "Galvji"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case galvjiBold = "Galvji-Bold"
 
         @available(iOS, introduced: 10.3)
@@ -532,6 +532,9 @@ extension UIFont {
         @available(iOS, introduced: 13.1)
         case hiraginoSansW7 = "HiraginoSans-W7"
 
+        @available(iOS, introduced: 13.0, deprecated: 13.1)
+        case hiraginoSansW8 = "HiraginoSans-W8"
+
         @available(iOS, introduced: 10.3)
         case hoeflerTextBlack = "HoeflerText-Black"
 
@@ -580,13 +583,13 @@ extension UIFont {
         @available(iOS, introduced: 10.3)
         case kohinoorDevanagariSemibold = "KohinoorDevanagari-Semibold"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case kohinoorGujaratiBold = "KohinoorGujarati-Bold"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case kohinoorGujaratiLight = "KohinoorGujarati-Light"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case kohinoorGujaratiRegular = "KohinoorGujarati-Regular"
 
         @available(iOS, introduced: 10.3)
@@ -625,13 +628,13 @@ extension UIFont {
         @available(iOS, introduced: 10.3)
         case menloRegular = "Menlo-Regular"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case muktaMaheeBold = "MuktaMahee-Bold"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case muktaMaheeLight = "MuktaMahee-Light"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case muktaMaheeRegular = "MuktaMahee-Regular"
 
         @available(iOS, introduced: 10.3)
@@ -649,34 +652,34 @@ extension UIFont {
         @available(iOS, introduced: 11.0)
         case notoNastaliqUrdu = "NotoNastaliqUrdu"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case notoNastaliqUrduBold = "NotoNastaliqUrdu-Bold"
 
         @available(iOS, introduced: 12.0, deprecated: 12.5)
         case notoSansChakmaRegular = "NotoSansChakma-Regular"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case notoSansKannadaBold = "NotoSansKannada-Bold"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case notoSansKannadaLight = "NotoSansKannada-Light"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case notoSansKannadaRegular = "NotoSansKannada-Regular"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case notoSansMyanmarBold = "NotoSansMyanmar-Bold"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case notoSansMyanmarLight = "NotoSansMyanmar-Light"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case notoSansMyanmarRegular = "NotoSansMyanmar-Regular"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case notoSansOriya = "NotoSansOriya"
 
-        @available(iOS, introduced: 13.1)
+        @available(iOS, introduced: 13.0)
         case notoSansOriyaBold = "NotoSansOriya-Bold"
 
         @available(iOS, introduced: 10.3)
