@@ -11,8 +11,12 @@ import XCTest
 
 extension XCTestCase {
 
-    func generateJSON<T: Codable>(name: String, identifiers: T) {
-        let identityInformations = IdentityInformations(name: name, identifiers: identifiers)
+    func generateJSON<T: Codable>(module: String, name: String, identifiers: T) {
+        let identityInformations = IdentityInformations(
+            module: module,
+            name: name,
+            identifiers: identifiers
+        )
 
         do {
             let jsonEncoder = JSONEncoder()

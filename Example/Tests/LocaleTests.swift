@@ -14,7 +14,7 @@ class LocaleTests: XCTestCase {
         #if TEST_LOCALE
             let identifiers = Locale.availableIdentifiers.sorted()
 
-            generateJSON(name: "Locale", identifiers: identifiers)
+            generateJSON(module: "Foundation", name: "Locale", identifiers: identifiers)
         #endif
     }
 }

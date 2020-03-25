@@ -18,7 +18,7 @@ class UIFontTests: XCTestCase {
                 UIFont.fontNames(forFamilyName: $0).sorted()
             }
 
-            generateJSON(name: "UIFont", identifiers: identifiers)
+            generateJSON(module: "UIKit", name: "UIFont", identifiers: identifiers)
         #endif
     }
 }
