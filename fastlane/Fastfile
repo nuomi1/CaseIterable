@@ -17,6 +17,7 @@ default_platform(:ios)
 
 platform :ios do
   before_all do
+    ENV["ASSETS_DIRECTORY"] ||= ENV["PWD"] + "/CaseIterable/Assets/"
     ENV["FL_COCOAPODS_PODFILE"] ||= "Example/Podfile"
     ENV["XCODEGEN_SPEC"] ||= "Example/project.yml"
     ENV["GITHUB_GIST_TOKEN"] ||= "CUSTOM_GITHUB_GIST_TOKEN"

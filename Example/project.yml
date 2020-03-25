@@ -18,6 +18,7 @@ targets:
       testTargets: 
         - CaseIterable_Tests
       environmentVariables:
+        ASSETS_DIRECTORY: ${ASSETS_DIRECTORY}
         GITHUB_GIST_TOKEN: ${GITHUB_GIST_TOKEN}
         GITHUB_GIST_ID: ${GITHUB_GIST_ID}
 
