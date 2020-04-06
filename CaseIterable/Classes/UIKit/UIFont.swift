@@ -326,10 +326,10 @@ extension UIFont {
         case courierNewPSMT = "CourierNewPSMT"
 
         @available(iOS, introduced: 11.3)
-        case dINAlternateBold = "DINAlternate-Bold"
+        case dinAlternateBold = "DINAlternate-Bold"
 
         @available(iOS, introduced: 11.3)
-        case dINCondensedBold = "DINCondensed-Bold"
+        case dinCondensedBold = "DINCondensed-Bold"
 
         @available(iOS, introduced: 10.3)
         case damascus = "Damascus"
