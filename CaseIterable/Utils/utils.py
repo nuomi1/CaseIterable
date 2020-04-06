@@ -38,7 +38,14 @@ def convert(one_string):
 
     new_string = "".join(words)
 
-    return new_string
+    return _convert(new_string)
+
+
+def _convert(one_string):
+    if one_string in ["as", "is"]:
+        return "`" + one_string + "`"
+    else:
+        return one_string
 
 
 def get_sorted_identifiers(dictionary_path):
