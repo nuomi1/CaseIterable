@@ -6,38 +6,12 @@
 //  Copyright © 2019 nuomi1. All rights reserved.
 //
 %{
-import json
-import os
-import re
+import sys
+sys.path.append("../../Utils")
 
-dictionary_path = "../../Assets/UIKit/UIFont/"
+from utils import *
 
-min_version = 10.3
-max_version = 13.4
-
-uifont_available_identifiers = {}
-
-for file in os.listdir(dictionary_path):
-    if file[-5:] != ".json":
-        break
-
-    with open(dictionary_path + file, "r") as f:
-        data = json.load(f)
-
-        version_string = re.findall(r"\d+\.\d+", data["systemVersion"])[0]
-        version_float = float(version_string)
-
-        for identifier in data["identifiers"]:
-            uifont_available_identifiers[identifier] = uifont_available_identifiers.get(
-                identifier, []) + [version_float]
-
-sorted_identifiers = sorted(
-    uifont_available_identifiers.items(), key=lambda item: item[0])
-
-def convert(one_string):
-    new_string = one_string.replace('-', '')
-    new_string = one_string[0].lower() + new_string[1:]
-    return new_string
+sorted_identifiers = get_sorted_identifiers("../../Assets/UIKit/UIFont/")
 }%
 
 import UIKit
