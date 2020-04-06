@@ -17,6 +17,7 @@ default_platform(:ios)
 
 platform :ios do
   before_all do
+    ENV["ASSETS_DIRECTORY"] ||= ENV["PWD"] + "/CaseIterable/Assets/"
     ENV["FL_COCOAPODS_PODFILE"] ||= "Example/Podfile"
     ENV["XCODEGEN_SPEC"] ||= "Example/project.yml"
     ENV["GITHUB_GIST_TOKEN"] ||= "CUSTOM_GITHUB_GIST_TOKEN"
@@ -55,6 +56,7 @@ platform :ios do
         "platform=iOS Simulator,OS=13.1,name=iPhone 6s",
         "platform=iOS Simulator,OS=13.2.2,name=iPhone 6s",
         "platform=iOS Simulator,OS=13.3,name=iPhone 6s",
+        "platform=iOS Simulator,OS=13.4,name=iPhone 6s",
       ],
       max_concurrent_simulators: 2,
       xcargs: "OTHER_SWIFT_FLAGS=-D#{options[:test]}",

@@ -1,21 +1,21 @@
 //
-//  Locale.swift
+//  TimeZone.swift
 //  CaseIterable
 //
-//  Created by nuomi1 on 14/7/2019.
-//  Copyright © 2019 nuomi1. All rights reserved.
+//  Created by nuomi1 on 2020/3/25.
+//  Copyright © 2020 nuomi1. All rights reserved.
 //
 %{
 import json
 import os
 import re
 
-dictionary_path = "../../Assets/Foundation/Locale/"
+dictionary_path = "../../Assets/Foundation/TimeZone/"
 
 min_version = 10.3
 max_version = 13.4
 
-locale_available_identifiers = {}
+timezone_available_identifiers = {}
 
 for file in os.listdir(dictionary_path):
     if file[-5:] != ".json":
@@ -28,29 +28,46 @@ for file in os.listdir(dictionary_path):
         version_float = float(version_string)
 
         for identifier in data["identifiers"]:
-            locale_available_identifiers[identifier] = locale_available_identifiers.get(
+            timezone_available_identifiers[identifier] = timezone_available_identifiers.get(
                 identifier, []) + [version_float]
 
 sorted_identifiers = sorted(
-    locale_available_identifiers.items(), key=lambda item: item[0])
+    timezone_available_identifiers.items(), key=lambda item: item[0])
+
+def convert(one_string, space_characters):
+
+    string_list = re.split(space_characters, one_string)
+
+    if string_list[0].isupper():
+        first = string_list[0].lower()
+    else:
+        first = string_list[0][0].lower() + string_list[0][1:]
+
+    others = string_list[1:] 
+ 
+    others_capital = [word[0].upper() + word[1:] for word in others]
+ 
+    others_capital[0:0] = [first]
+ 
+    new_string = ''.join(others_capital)
+
+    return new_string
 }%
 
 import Foundation
 
 // swiftlint:disable file_length
 
-extension Locale {
+extension TimeZone {
 
     public enum Identifier {}
 }
 
-public extension Locale.Identifier {
+public extension TimeZone.Identifier {
 
     // swiftlint:disable identifier_name
 
 % for identifier, versions in sorted_identifiers:
-%     (prefix, suffix) = ("`", "`") if identifier in ["as", "is"] else ("", "")
-%
 %     introduced_version = min(versions)
 %     deprecated_version = max(versions) + 0.1
 %
@@ -59,7 +76,7 @@ public extension Locale.Identifier {
 %     else:
     @available(iOS, introduced: ${introduced_version})
 %     end
-    static let ${prefix}${identifier}${suffix} = Locale(identifier: "${identifier}")
+    static let ${convert(identifier, "-|_|/")} = TimeZone(identifier: "${identifier}")!
 %
 %     if identifier != sorted_identifiers[-1][0]:
 

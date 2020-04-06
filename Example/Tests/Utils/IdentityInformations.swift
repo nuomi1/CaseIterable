@@ -16,6 +16,8 @@ struct IdentityInformations<T: Codable>: Codable {
 
     let systemVersion: String = Device.current.systemVersion!
 
+    var module: String = ""
+
     var name: String = ""
 
     let identifiers: T

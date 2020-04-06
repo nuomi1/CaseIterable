@@ -11,8 +11,12 @@ import XCTest
 
 extension XCTestCase {
 
-    func generateJSON<T: Codable>(name: String, identifiers: T) {
-        let identityInformations = IdentityInformations(name: name, identifiers: identifiers)
+    func generateJSON<T: Codable>(module: String, name: String, identifiers: T) {
+        let identityInformations = IdentityInformations(
+            module: module,
+            name: name,
+            identifiers: identifiers
+        )
 
         do {
             let jsonEncoder = JSONEncoder()
@@ -20,14 +24,18 @@ extension XCTestCase {
 
             let fileManager = FileManager()
 
-            let documentDirectory = try fileManager.url(
-                for: .documentDirectory,
-                in: .userDomainMask,
-                appropriateFor: nil,
-                create: true
-            )
+            let fileDirectory = assetsDirectory
+                .appendingPathComponent(identityInformations.module)
+                .appendingPathComponent(identityInformations.name)
 
-            let filePath = documentDirectory
+            if !fileManager.fileExists(atPath: fileDirectory.absoluteString) {
+                try fileManager.createDirectory(
+                    at: fileDirectory,
+                    withIntermediateDirectories: true
+                )
+            }
+
+            let filePath = fileDirectory
                 .appendingPathComponent(identityInformations.fileName)
                 .appendingPathExtension("json")
 
@@ -35,11 +43,6 @@ extension XCTestCase {
             try data.write(to: filePath)
 
             debugPrint(filePath)
-
-            getJSON(
-                filePath: filePath,
-                data: data
-            )
         } catch {
             XCTAssertFalse(true, error.localizedDescription)
         }
@@ -121,3 +124,7 @@ extension XCTestCase {
         wait(for: [exp], timeout: 20)
     }
 }
+
+private let assetsDirectory: URL = {
+    URL(fileURLWithPath: ProcessInfo().environment["ASSETS_DIRECTORY"])
+}()

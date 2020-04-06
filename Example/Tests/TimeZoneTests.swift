@@ -14,7 +14,7 @@ class TimeZoneTests: XCTestCase {
         #if TEST_TIMEZONE
             let identifiers = TimeZone.knownTimeZoneIdentifiers.sorted()
 
-            generateJSON(name: "TimeZone", identifiers: identifiers)
+            generateJSON(module: "Foundation", name: "TimeZone", identifiers: identifiers)
         #endif
     }
 }

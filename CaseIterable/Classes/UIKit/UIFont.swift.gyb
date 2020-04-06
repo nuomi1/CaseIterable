@@ -13,7 +13,7 @@ import re
 dictionary_path = "../../Assets/UIKit/UIFont/"
 
 min_version = 10.3
-max_version = 13.3
+max_version = 13.4
 
 uifont_available_identifiers = {}
 
