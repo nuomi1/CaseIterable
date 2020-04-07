@@ -12,7 +12,7 @@ import Foundation
 
 extension Locale {
 
-    // swiftlint:disable type_body_length
+    // swiftlint:disable identifier_name type_body_length
 
     public enum Identifier: String {
 
@@ -2828,7 +2828,7 @@ extension Locale {
         case zuZA = "zu_ZA"
     }
 
-    // swiftlint:enable type_body_length
+    // swiftlint:enable identifier_name type_body_length
 }
 
 extension Locale {
