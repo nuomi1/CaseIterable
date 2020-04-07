@@ -8,7 +8,6 @@ target "CaseIterable_Example" do
 
   target "CaseIterable_Tests" do
     pod "DeviceKit"
-    pod "Moya"
 
     inherit! :complete
   end

@@ -12,13 +12,11 @@ import XCTest
 class UIFontTests: XCTestCase {
 
     func testUIFont() {
-        #if TEST_UIFONT
-            let familyNames = UIFont.familyNames.sorted()
-            let identifiers = familyNames.flatMap {
-                UIFont.fontNames(forFamilyName: $0).sorted()
-            }
+        let familyNames = UIFont.familyNames.sorted()
+        let identifiers = familyNames.flatMap {
+            UIFont.fontNames(forFamilyName: $0).sorted()
+        }
 
-            generateJSON(module: "UIKit", name: "UIFont", identifiers: identifiers)
-        #endif
+        generateJSON(module: "UIKit", name: "UIFont", identifiers: identifiers)
     }
 }

@@ -20,8 +20,6 @@ platform :ios do
     ENV["ASSETS_DIRECTORY"] ||= ENV["PWD"] + "/CaseIterable/Assets/"
     ENV["FL_COCOAPODS_PODFILE"] ||= "Example/Podfile"
     ENV["XCODEGEN_SPEC"] ||= "Example/project.yml"
-    ENV["GITHUB_GIST_TOKEN"] ||= "CUSTOM_GITHUB_GIST_TOKEN"
-    ENV["GITHUB_GIST_ID"] ||= "CUSTOM_GITHUB_GIST_ID"
   end
 
   lane :setup_xcodegen do
@@ -35,6 +33,14 @@ platform :ios do
   lane :setup do
     setup_xcodegen
     setup_cocoapods
+  end
+
+  lane :format do
+    swiftformat
+  end
+
+  lane :lint do
+    swiftlint
   end
 
   lane :scan_test do |options|
@@ -59,22 +65,15 @@ platform :ios do
         "platform=iOS Simulator,OS=13.4,name=iPhone 6s",
       ],
       max_concurrent_simulators: 2,
-      xcargs: "OTHER_SWIFT_FLAGS=-D#{options[:test]}",
     )
   end
 
-  lane :generate_locale_json do
+  lane :generate_json do
     setup
-    scan_test(test: "TEST_LOCALE")
+    scan_test()
   end
 
-  lane :generate_timezone_json do
-    setup
-    scan_test(test: "TEST_TIMEZONE")
-  end
-
-  lane :generate_uifont_json do
-    setup
-    scan_test(test: "TEST_UIFONT")
+  lane :generate_swift do
+    sh("./run-gyb.sh")
   end
 end

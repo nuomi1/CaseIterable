@@ -6,52 +6,12 @@
 //  Copyright © 2020 nuomi1. All rights reserved.
 //
 %{
-import json
-import os
-import re
+import sys
+sys.path.append("../../Utils")
 
-dictionary_path = "../../Assets/Foundation/TimeZone/"
+from utils import *
 
-min_version = 10.3
-max_version = 13.4
-
-timezone_available_identifiers = {}
-
-for file in os.listdir(dictionary_path):
-    if file[-5:] != ".json":
-        break
-
-    with open(dictionary_path + file, "r") as f:
-        data = json.load(f)
-
-        version_string = re.findall(r"\d+\.\d+", data["systemVersion"])[0]
-        version_float = float(version_string)
-
-        for identifier in data["identifiers"]:
-            timezone_available_identifiers[identifier] = timezone_available_identifiers.get(
-                identifier, []) + [version_float]
-
-sorted_identifiers = sorted(
-    timezone_available_identifiers.items(), key=lambda item: item[0])
-
-def convert(one_string, space_characters):
-
-    string_list = re.split(space_characters, one_string)
-
-    if string_list[0].isupper():
-        first = string_list[0].lower()
-    else:
-        first = string_list[0][0].lower() + string_list[0][1:]
-
-    others = string_list[1:] 
- 
-    others_capital = [word[0].upper() + word[1:] for word in others]
- 
-    others_capital[0:0] = [first]
- 
-    new_string = ''.join(others_capital)
-
-    return new_string
+sorted_identifiers = get_sorted_identifiers("../../Assets/Foundation/TimeZone/")
 }%
 
 import Foundation
@@ -60,29 +20,41 @@ import Foundation
 
 extension TimeZone {
 
-    public enum Identifier {}
-}
+    // swiftlint:disable type_body_length
 
-public extension TimeZone.Identifier {
-
-    // swiftlint:disable identifier_name
+    public enum Identifier: String {
 
 % for identifier, versions in sorted_identifiers:
 %     introduced_version = min(versions)
 %     deprecated_version = max(versions) + 0.1
 %
 %     if deprecated_version != max_version + 0.1:
-    @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
+        @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
 %     else:
-    @available(iOS, introduced: ${introduced_version})
+        @available(iOS, introduced: ${introduced_version})
 %     end
-    static let ${convert(identifier, "-|_|/")} = TimeZone(identifier: "${identifier}")!
+        case ${convert(identifier)} = "${identifier}"
 %
 %     if identifier != sorted_identifiers[-1][0]:
 
 %     else:
 %     end
 % end
+    }
 
-    // swiftlint:enable identifier_name
+    // swiftlint:enable type_body_length
+}
+
+extension TimeZone {
+
+    public init(identifier: Identifier) {
+        self.init(identifier: identifier.rawValue)!
+    }
+}
+
+extension TimeZone.Identifier {
+
+    public func toTimeZone() -> TimeZone {
+        return TimeZone(identifier: self)
+    }
 }

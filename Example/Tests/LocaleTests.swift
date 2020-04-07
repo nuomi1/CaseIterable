@@ -11,10 +11,8 @@ import XCTest
 class LocaleTests: XCTestCase {
 
     func testLocale() {
-        #if TEST_LOCALE
-            let identifiers = Locale.availableIdentifiers.sorted()
+        let identifiers = Locale.availableIdentifiers.sorted()
 
-            generateJSON(module: "Foundation", name: "Locale", identifiers: identifiers)
-        #endif
+        generateJSON(module: "Foundation", name: "Locale", identifiers: identifiers)
     }
 }

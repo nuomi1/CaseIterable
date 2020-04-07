@@ -326,10 +326,10 @@ extension UIFont {
         case courierNewPSMT = "CourierNewPSMT"
 
         @available(iOS, introduced: 11.3)
-        case dINAlternateBold = "DINAlternate-Bold"
+        case dinAlternateBold = "DINAlternate-Bold"
 
         @available(iOS, introduced: 11.3)
-        case dINCondensedBold = "DINCondensed-Bold"
+        case dinCondensedBold = "DINCondensed-Bold"
 
         @available(iOS, introduced: 10.3)
         case damascus = "Damascus"
@@ -874,7 +874,14 @@ extension UIFont {
 
 extension UIFont {
 
-    public convenience init?(systemName: UIFont.SystemName, size: CGFloat) {
-        self.init(name: systemName.rawValue, size: size)
+    public convenience init(systemName: UIFont.SystemName, size: CGFloat) {
+        self.init(name: systemName.rawValue, size: size)!
+    }
+}
+
+extension UIFont.SystemName {
+
+    public func toUIFont(size: CGFloat) -> UIFont {
+        return UIFont(systemName: self, size: size)
     }
 }
