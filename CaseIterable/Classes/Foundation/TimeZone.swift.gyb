@@ -20,29 +20,27 @@ import Foundation
 
 extension TimeZone {
 
-    public enum Identifier {}
-}
+    // swiftlint:disable type_body_length
 
-public extension TimeZone.Identifier {
-
-    // swiftlint:disable identifier_name
+    public enum Identifier: String {
 
 % for identifier, versions in sorted_identifiers:
 %     introduced_version = min(versions)
 %     deprecated_version = max(versions) + 0.1
 %
 %     if deprecated_version != max_version + 0.1:
-    @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
+        @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
 %     else:
-    @available(iOS, introduced: ${introduced_version})
+        @available(iOS, introduced: ${introduced_version})
 %     end
-    static let ${convert(identifier)} = TimeZone(identifier: "${identifier}")!
+        case ${convert(identifier)} = "${identifier}"
 %
 %     if identifier != sorted_identifiers[-1][0]:
 
 %     else:
 %     end
 % end
+    }
 
-    // swiftlint:enable identifier_name
+    // swiftlint:enable type_body_length
 }
