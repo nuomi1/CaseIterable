@@ -11,10 +11,8 @@ import XCTest
 class TimeZoneTests: XCTestCase {
 
     func testExample() {
-        #if TEST_TIMEZONE
-            let identifiers = TimeZone.knownTimeZoneIdentifiers.sorted()
+        let identifiers = TimeZone.knownTimeZoneIdentifiers.sorted()
 
-            generateJSON(module: "Foundation", name: "TimeZone", identifiers: identifiers)
-        #endif
+        generateJSON(module: "Foundation", name: "TimeZone", identifiers: identifiers)
     }
 }
