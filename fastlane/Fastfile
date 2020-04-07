@@ -59,23 +59,12 @@ platform :ios do
         "platform=iOS Simulator,OS=13.4,name=iPhone 6s",
       ],
       max_concurrent_simulators: 2,
-      xcargs: "OTHER_SWIFT_FLAGS=-D#{options[:test]}",
     )
   end
 
-  lane :generate_locale_json do
+  lane :generate_json do
     setup
-    scan_test(test: "TEST_LOCALE")
-  end
-
-  lane :generate_timezone_json do
-    setup
-    scan_test(test: "TEST_TIMEZONE")
-  end
-
-  lane :generate_uifont_json do
-    setup
-    scan_test(test: "TEST_UIFONT")
+    scan_test()
   end
 
   lane :generate_swift do
