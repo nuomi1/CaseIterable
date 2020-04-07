@@ -36,6 +36,11 @@ fastlane ios setup
 fastlane ios format
 ```
 
+### ios lint
+```
+fastlane ios lint
+```
+
 ### ios scan_test
 ```
 fastlane ios scan_test

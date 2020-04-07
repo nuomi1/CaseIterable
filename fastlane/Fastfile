@@ -39,6 +39,10 @@ platform :ios do
     swiftformat
   end
 
+  lane :lint do
+    swiftlint
+  end
+
   lane :scan_test do |options|
     scan(
       workspace: "Example/CaseIterable.xcworkspace",
