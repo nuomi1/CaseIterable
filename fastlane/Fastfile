@@ -37,6 +37,10 @@ platform :ios do
     setup_cocoapods
   end
 
+  lane :format do
+    swiftformat
+  end
+
   lane :scan_test do |options|
     scan(
       workspace: "Example/CaseIterable.xcworkspace",

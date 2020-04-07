@@ -31,6 +31,11 @@ fastlane ios setup_cocoapods
 fastlane ios setup
 ```
 
+### ios format
+```
+fastlane ios format
+```
+
 ### ios scan_test
 ```
 fastlane ios scan_test
