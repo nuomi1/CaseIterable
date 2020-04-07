@@ -15,12 +15,10 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: org.cocoapods.demo.CaseIterable-Example
         SWIFT_VERSION: 5.0
     scheme:
-      testTargets: 
+      testTargets:
         - CaseIterable_Tests
       environmentVariables:
         ASSETS_DIRECTORY: ${ASSETS_DIRECTORY}
-        GITHUB_GIST_TOKEN: ${GITHUB_GIST_TOKEN}
-        GITHUB_GIST_ID: ${GITHUB_GIST_ID}
 
   CaseIterable_Tests:
     type: bundle.unit-test
