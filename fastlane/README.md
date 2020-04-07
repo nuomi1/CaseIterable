@@ -51,6 +51,11 @@ fastlane ios generate_timezone_json
 fastlane ios generate_uifont_json
 ```
 
+### ios generate_swift
+```
+fastlane ios generate_swift
+```
+
 
 ----
 

@@ -77,4 +77,8 @@ platform :ios do
     setup
     scan_test(test: "TEST_UIFONT")
   end
+
+  lane :generate_swift do
+    sh("./run-gyb.sh")
+  end
 end
