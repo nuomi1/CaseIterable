@@ -1336,3 +1336,17 @@ extension TimeZone {
 
     // swiftlint:enable type_body_length
 }
+
+extension TimeZone {
+
+    public init(identifier: Identifier) {
+        self.init(identifier: identifier.rawValue)!
+    }
+}
+
+extension TimeZone.Identifier {
+
+    public func toTimeZone() -> TimeZone {
+        return TimeZone(identifier: self)
+    }
+}

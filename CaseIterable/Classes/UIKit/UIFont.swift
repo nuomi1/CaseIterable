@@ -871,3 +871,17 @@ extension UIFont {
 
     // swiftlint:enable type_body_length
 }
+
+extension UIFont {
+
+    public convenience init(systemName: UIFont.SystemName, size: CGFloat) {
+        self.init(name: systemName.rawValue, size: size)!
+    }
+}
+
+extension UIFont.SystemName {
+
+    public func toUIFont(size: CGFloat) -> UIFont {
+        return UIFont(systemName: self, size: size)
+    }
+}
