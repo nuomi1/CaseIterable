@@ -126,5 +126,5 @@ extension XCTestCase {
 }
 
 private let assetsDirectory: URL = {
-    URL(fileURLWithPath: ProcessInfo().environment["ASSETS_DIRECTORY"])
+    URL(fileURLWithPath: ProcessInfo().environment["ASSETS_DIRECTORY"]!)
 }()
