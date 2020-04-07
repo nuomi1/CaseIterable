@@ -114,6 +114,7 @@ GEM
       xcpretty (~> 0.3.0)
       xcpretty-travis-formatter (>= 0.0.3)
     fastlane-plugin-brew (0.1.1)
+    fastlane-plugin-swiftformat (0.1.0)
     fastlane-plugin-xcodegen (0.1.0)
       fastlane-plugin-brew (~> 0.1.1)
     ffi (1.12.2)
@@ -224,6 +225,7 @@ PLATFORMS
 DEPENDENCIES
   cocoapods
   fastlane
+  fastlane-plugin-swiftformat
   fastlane-plugin-xcodegen
 
 BUNDLED WITH
