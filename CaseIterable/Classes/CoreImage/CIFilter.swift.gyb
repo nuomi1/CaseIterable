@@ -1,0 +1,60 @@
+//
+//  CIFilter.swift
+//  CaseIterable
+//
+//  Created by nuomi1 on 2020/4/10.
+//  Copyright © 2020 nuomi1. All rights reserved.
+//
+%{
+import sys
+sys.path.append("../../Utils")
+
+from utils import *
+
+sorted_identifiers = get_sorted_identifiers("../../Assets/CoreImage/CIFilter/")
+}%
+
+import CoreImage
+
+// swiftlint:disable file_length
+
+extension CIFilter {
+
+    // swiftlint:disable type_body_length
+
+    public enum SystemName: String {
+
+% for identifier, versions in sorted_identifiers:
+%     introduced_version = min(versions)
+%     deprecated_version = max(versions) + 0.1
+%
+%     if deprecated_version != max_version + 0.1:
+        @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
+%     else:
+        @available(iOS, introduced: ${introduced_version})
+%     end
+        case ${convert(identifier, "CI")} = "${identifier}"
+%
+%     if identifier != sorted_identifiers[-1][0]:
+
+%     else:
+%     end
+% end
+    }
+
+    // swiftlint:enable type_body_length
+}
+
+extension CIFilter {
+
+    public convenience init(systemName: SystemName) {
+        self.init(name: systemName.rawValue)!
+    }
+}
+
+extension CIFilter.SystemName {
+
+    public func toCIFilter() -> CIFilter {
+        return CIFilter(systemName: self)
+    }
+}

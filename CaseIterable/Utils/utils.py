@@ -16,7 +16,8 @@ min_version = 10.3
 max_version = 13.4
 
 
-def convert(one_string):
+def convert(one_string, remove_prefix = ""):
+    one_string = one_string.replace(remove_prefix, "", 1)
     string_list = re.split("_|-|/", one_string)
 
     first = string_list[0]
