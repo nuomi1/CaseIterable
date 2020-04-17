@@ -12,8 +12,10 @@ import json
 import os
 import re
 
-min_version = 10.3
-max_version = 13.4
+from distutils.version import StrictVersion
+
+min_version = StrictVersion("10.3")
+max_version = StrictVersion("13.4")
 
 
 def convert(one_string, remove_prefix=""):
@@ -59,13 +61,30 @@ def get_sorted_identifiers(dictionary_path):
         with open(dictionary_path + file, "r") as f:
             data = json.load(f)
 
-            version_string = re.findall(r"\d+\.\d+", data["systemVersion"])[0]
-            version_float = float(version_string)
+            version = StrictVersion(data["systemVersion"])
 
             for identifier in data["identifiers"]:
                 identifiers[identifier] = identifiers.get(
-                    identifier, []) + [version_float]
+                    identifier, []) + [version]
 
     sorted_identifiers = sorted(identifiers.items(), key=lambda item: item[0])
 
     return sorted_identifiers
+
+
+def get_major_minor_version(one_version):
+    new_version_string = "{0}.{1}".format(
+        one_version.version[0], one_version.version[1])
+
+    new_version = StrictVersion(new_version_string)
+
+    return new_version
+
+
+def increase_minor_version(one_version):
+    new_version_string = "{0}.{1}".format(
+        one_version.version[0], one_version.version[1] + 1)
+
+    new_version = StrictVersion(new_version_string)
+
+    return new_version
