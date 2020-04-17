@@ -28,7 +28,7 @@ extension UIFont {
 %     introduced_version = get_major_minor_version(min(versions))
 %     deprecated_version = increase_minor_version(max(versions))
 %
-%     if deprecated_version != increase_minor_version(max_version):
+%     if deprecated_version < increase_minor_version(max_version):
         @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
 %     else:
         @available(iOS, introduced: ${introduced_version})
