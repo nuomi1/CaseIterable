@@ -54,7 +54,7 @@ def get_sorted_identifiers(dictionary_path):
 
     for file in os.listdir(dictionary_path):
         if file[-5:] != ".json":
-            break
+            continue
 
         with open(dictionary_path + file, "r") as f:
             data = json.load(f)
