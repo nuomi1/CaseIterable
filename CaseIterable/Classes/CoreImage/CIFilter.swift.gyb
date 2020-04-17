@@ -25,10 +25,10 @@ extension CIFilter {
     public enum SystemName: String {
 
 % for identifier, versions in sorted_identifiers:
-%     introduced_version = min(versions)
-%     deprecated_version = max(versions) + 0.1
+%     introduced_version = get_major_minor_version(min(versions))
+%     deprecated_version = increase_minor_version(max(versions))
 %
-%     if deprecated_version != max_version + 0.1:
+%     if deprecated_version != increase_minor_version(max_version):
         @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
 %     else:
         @available(iOS, introduced: ${introduced_version})
