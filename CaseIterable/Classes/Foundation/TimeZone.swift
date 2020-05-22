@@ -496,6 +496,9 @@ extension TimeZone {
         @available(iOS, introduced: 10.3)
         case americaNorthDakotaNewSalem = "America/North_Dakota/New_Salem"
 
+        @available(iOS, introduced: 11.0)
+        case americaNuuk = "America/Nuuk"
+
         @available(iOS, introduced: 10.3)
         case americaOjinaga = "America/Ojinaga"
 
