@@ -14,7 +14,7 @@ import re
 
 from distutils.version import StrictVersion
 
-min_version = StrictVersion("10.3")
+min_version = StrictVersion("11.4")
 max_version = StrictVersion("13.7")
 
 
