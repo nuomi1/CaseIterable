@@ -7,7 +7,7 @@ targets:
   CaseIterable_Example:
     type: application
     platform: iOS
-    deploymentTarget: 10.3
+    deploymentTarget: 11.4
     sources:
       - CaseIterable
     settings:
@@ -23,6 +23,6 @@ targets:
   CaseIterable_Tests:
     type: bundle.unit-test
     platform: iOS
-    deploymentTarget: 10.3
+    deploymentTarget: 11.4
     sources:
       - Tests
