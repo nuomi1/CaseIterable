@@ -62,6 +62,9 @@ platform :ios do
         "platform=iOS Simulator,OS=13.5,name=iPhone 6s",
         "platform=iOS Simulator,OS=13.6,name=iPhone 6s",
         "platform=iOS Simulator,OS=13.7,name=iPhone 6s",
+        "platform=iOS Simulator,OS=14.0.1,name=iPhone 6s",
+        "platform=iOS Simulator,OS=14.1,name=iPhone 6s",
+        "platform=iOS Simulator,OS=14.2,name=iPhone 6s",
       ],
     )
   end
