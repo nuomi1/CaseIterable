@@ -17,10 +17,10 @@ default_platform(:ios)
 
 platform :ios do
   before_all do
+    ENV["ASSETS_DIRECTORY"] ||= ENV["PWD"] + "/CaseIterable/Assets/"
     ENV["FL_COCOAPODS_PODFILE"] ||= "Example/Podfile"
+    ENV["SCAN_WORKSPACE"] ||= "Example/CaseIterable.xcworkspace"
     ENV["XCODEGEN_SPEC"] ||= "Example/project.yml"
-    ENV["GITHUB_GIST_TOKEN"] ||= "CUSTOM_GITHUB_GIST_TOKEN"
-    ENV["GITHUB_GIST_ID"] ||= "CUSTOM_GITHUB_GIST_ID"
   end
 
   lane :setup_xcodegen do
@@ -36,10 +36,18 @@ platform :ios do
     setup_cocoapods
   end
 
+  lane :format do
+    swiftformat
+  end
+
+  lane :lint do
+    swiftlint
+  end
+
   lane :scan_test do |options|
     scan(
-      workspace: "Example/CaseIterable.xcworkspace",
       clean: true,
+      max_concurrent_simulators: 2,
       destination: [
         "platform=iOS Simulator,OS=10.3.1,name=iPhone 6s",
         "platform=iOS Simulator,OS=11.0.1,name=iPhone 6s",
@@ -55,19 +63,20 @@ platform :ios do
         "platform=iOS Simulator,OS=13.1,name=iPhone 6s",
         "platform=iOS Simulator,OS=13.2.2,name=iPhone 6s",
         "platform=iOS Simulator,OS=13.3,name=iPhone 6s",
+        "platform=iOS Simulator,OS=13.4,name=iPhone 6s",
+        "platform=iOS Simulator,OS=13.5,name=iPhone 6s",
+        "platform=iOS Simulator,OS=13.6,name=iPhone 6s",
+        "platform=iOS Simulator,OS=13.7,name=iPhone 6s",
       ],
-      max_concurrent_simulators: 2,
-      xcargs: "OTHER_SWIFT_FLAGS=-D#{options[:test]}",
     )
   end
 
-  lane :generate_locale_json do
+  lane :generate_json do
     setup
-    scan_test(test: "TEST_LOCALE")
+    scan_test()
   end
 
-  lane :generate_uifont_json do
-    setup
-    scan_test(test: "TEST_UIFONT")
+  lane :generate_swift do
+    sh("./run-gyb.sh")
   end
 end

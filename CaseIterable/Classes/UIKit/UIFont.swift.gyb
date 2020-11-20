@@ -6,38 +6,12 @@
 //  Copyright © 2019 nuomi1. All rights reserved.
 //
 %{
-import json
-import os
-import re
+import sys
+sys.path.append("../../Utils")
 
-dictionary_path = "../../Assets/UIKit/UIFont/"
+from utils import *
 
-min_version = 10.3
-max_version = 13.3
-
-uifont_available_identifiers = {}
-
-for file in os.listdir(dictionary_path):
-    if file[-5:] != ".json":
-        break
-
-    with open(dictionary_path + file, "r") as f:
-        data = json.load(f)
-
-        version_string = re.findall(r"\d+\.\d+", data["systemVersion"])[0]
-        version_float = float(version_string)
-
-        for identifier in data["identifiers"]:
-            uifont_available_identifiers[identifier] = uifont_available_identifiers.get(
-                identifier, []) + [version_float]
-
-sorted_identifiers = sorted(
-    uifont_available_identifiers.items(), key=lambda item: item[0])
-
-def convert(one_string):
-    new_string = one_string.replace('-', '')
-    new_string = one_string[0].lower() + new_string[1:]
-    return new_string
+sorted_identifiers = get_sorted_identifiers("../../Assets/UIKit/UIFont/")
 }%
 
 import UIKit
@@ -51,10 +25,10 @@ extension UIFont {
     public enum SystemName: String {
 
 % for identifier, versions in sorted_identifiers:
-%     introduced_version = min(versions)
-%     deprecated_version = max(versions) + 0.1
+%     introduced_version = get_major_minor_version(min(versions))
+%     deprecated_version = increase_minor_version(max(versions))
 %
-%     if deprecated_version != max_version + 0.1:
+%     if deprecated_version < increase_minor_version(max_version):
         @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
 %     else:
         @available(iOS, introduced: ${introduced_version})
@@ -73,7 +47,14 @@ extension UIFont {
 
 extension UIFont {
 
-    public convenience init?(systemName: UIFont.SystemName, size: CGFloat) {
-        self.init(name: systemName.rawValue, size: size)
+    public convenience init(systemName: UIFont.SystemName, size: CGFloat) {
+        self.init(name: systemName.rawValue, size: size)!
+    }
+}
+
+extension UIFont.SystemName {
+
+    public func toUIFont(size: CGFloat) -> UIFont {
+        return UIFont(systemName: self, size: size)
     }
 }

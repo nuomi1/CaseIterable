@@ -1,0 +1,60 @@
+//
+//  TimeZone.swift
+//  CaseIterable
+//
+//  Created by nuomi1 on 2020/3/25.
+//  Copyright © 2020 nuomi1. All rights reserved.
+//
+%{
+import sys
+sys.path.append("../../Utils")
+
+from utils import *
+
+sorted_identifiers = get_sorted_identifiers("../../Assets/Foundation/TimeZone/")
+}%
+
+import Foundation
+
+// swiftlint:disable file_length
+
+extension TimeZone {
+
+    // swiftlint:disable type_body_length
+
+    public enum Identifier: String {
+
+% for identifier, versions in sorted_identifiers:
+%     introduced_version = get_major_minor_version(min(versions))
+%     deprecated_version = increase_minor_version(max(versions))
+%
+%     if deprecated_version < increase_minor_version(max_version):
+        @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
+%     else:
+        @available(iOS, introduced: ${introduced_version})
+%     end
+        case ${convert(identifier)} = "${identifier}"
+%
+%     if identifier != sorted_identifiers[-1][0]:
+
+%     else:
+%     end
+% end
+    }
+
+    // swiftlint:enable type_body_length
+}
+
+extension TimeZone {
+
+    public init(identifier: Identifier) {
+        self.init(identifier: identifier.rawValue)!
+    }
+}
+
+extension TimeZone.Identifier {
+
+    public func toTimeZone() -> TimeZone {
+        return TimeZone(identifier: self)
+    }
+}

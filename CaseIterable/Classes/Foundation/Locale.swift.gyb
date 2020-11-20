@@ -6,33 +6,12 @@
 //  Copyright © 2019 nuomi1. All rights reserved.
 //
 %{
-import json
-import os
-import re
+import sys
+sys.path.append("../../Utils")
 
-dictionary_path = "../../Assets/Foundation/Locale/"
+from utils import *
 
-min_version = 10.3
-max_version = 13.3
-
-locale_available_identifiers = {}
-
-for file in os.listdir(dictionary_path):
-    if file[-5:] != ".json":
-        break
-
-    with open(dictionary_path + file, "r") as f:
-        data = json.load(f)
-
-        version_string = re.findall(r"\d+\.\d+", data["systemVersion"])[0]
-        version_float = float(version_string)
-
-        for identifier in data["identifiers"]:
-            locale_available_identifiers[identifier] = locale_available_identifiers.get(
-                identifier, []) + [version_float]
-
-sorted_identifiers = sorted(
-    locale_available_identifiers.items(), key=lambda item: item[0])
+sorted_identifiers = get_sorted_identifiers("../../Assets/Foundation/Locale/")
 }%
 
 import Foundation
@@ -41,31 +20,41 @@ import Foundation
 
 extension Locale {
 
-    public enum Identifier {}
-}
+    // swiftlint:disable identifier_name type_body_length
 
-public extension Locale.Identifier {
-
-    // swiftlint:disable identifier_name
+    public enum Identifier: String {
 
 % for identifier, versions in sorted_identifiers:
-%     (prefix, suffix) = ("`", "`") if identifier in ["as", "is"] else ("", "")
+%     introduced_version = get_major_minor_version(min(versions))
+%     deprecated_version = increase_minor_version(max(versions))
 %
-%     introduced_version = min(versions)
-%     deprecated_version = max(versions) + 0.1
-%
-%     if deprecated_version != max_version + 0.1:
-    @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
+%     if deprecated_version < increase_minor_version(max_version):
+        @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
 %     else:
-    @available(iOS, introduced: ${introduced_version})
+        @available(iOS, introduced: ${introduced_version})
 %     end
-    static let ${prefix}${identifier}${suffix} = Locale(identifier: "${identifier}")
+        case ${convert(identifier)} = "${identifier}"
 %
 %     if identifier != sorted_identifiers[-1][0]:
 
 %     else:
 %     end
 % end
+    }
 
-    // swiftlint:enable identifier_name
+    // swiftlint:enable identifier_name type_body_length
+}
+
+extension Locale {
+
+    public init(identifier: Identifier) {
+        self.init(identifier: identifier.rawValue)
+    }
+}
+
+extension Locale.Identifier {
+
+    public func toLocale() -> Locale {
+        return Locale(identifier: self)
+    }
 }
