@@ -442,6 +442,12 @@ extension UIFont {
         @available(iOS, introduced: 11.4)
         case gillSansUltraBold = "GillSans-UltraBold"
 
+        @available(iOS, introduced: 14.2)
+        case granthaSangamMNBold = "GranthaSangamMN-Bold"
+
+        @available(iOS, introduced: 14.2)
+        case granthaSangamMNRegular = "GranthaSangamMN-Regular"
+
         @available(iOS, introduced: 11.4, deprecated: 12.5)
         case gujaratiSangamMN = "GujaratiSangamMN"
 
