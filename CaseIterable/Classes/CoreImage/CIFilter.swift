@@ -121,6 +121,9 @@ extension CIFilter {
         @available(iOS, introduced: 11.4)
         case code128BarcodeGenerator = "CICode128BarcodeGenerator"
 
+        @available(iOS, introduced: 14.0)
+        case colorAbsoluteDifference = "CIColorAbsoluteDifference"
+
         @available(iOS, introduced: 11.4)
         case colorBlendMode = "CIColorBlendMode"
 
@@ -168,6 +171,12 @@ extension CIFilter {
 
         @available(iOS, introduced: 11.4)
         case colorPosterize = "CIColorPosterize"
+
+        @available(iOS, introduced: 14.0)
+        case colorThreshold = "CIColorThreshold"
+
+        @available(iOS, introduced: 14.0)
+        case colorThresholdOtsu = "CIColorThresholdOtsu"
 
         @available(iOS, introduced: 11.4)
         case columnAverage = "CIColumnAverage"

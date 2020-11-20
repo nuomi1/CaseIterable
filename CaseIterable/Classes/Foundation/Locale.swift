@@ -451,7 +451,7 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case en150 = "en_150"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case enAD = "en_AD"
 
         @available(iOS, introduced: 13.0)
@@ -478,7 +478,7 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case enAU = "en_AU"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case enBA = "en_BA"
 
         @available(iOS, introduced: 11.4)
@@ -498,6 +498,9 @@ extension Locale {
 
         @available(iOS, introduced: 11.4)
         case enBM = "en_BM"
+
+        @available(iOS, introduced: 14.2)
+        case enBN = "en_BN"
 
         @available(iOS, introduced: 11.4)
         case enBR = "en_BR"
@@ -562,7 +565,7 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case enER = "en_ER"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case enES = "en_ES"
 
         @available(iOS, introduced: 11.4)
@@ -610,7 +613,7 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case enHK = "en_HK"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case enHR = "en_HR"
 
         @available(iOS, introduced: 11.4)
@@ -634,10 +637,10 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case enIO = "en_IO"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case enIS = "en_IS"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case enIT = "en_IT"
 
         @available(iOS, introduced: 11.4)
@@ -676,13 +679,13 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case enLT = "en_LT"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case enLU = "en_LU"
 
         @available(iOS, introduced: 11.4)
         case enLV = "en_LV"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case enME = "en_ME"
 
         @available(iOS, introduced: 11.4)
@@ -769,10 +772,10 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case enPW = "en_PW"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case enRO = "en_RO"
 
-        @available(iOS, introduced: 13.0)
+        @available(iOS, introduced: 13.0, deprecated: 13.8)
         case enRS = "en_RS"
 
         @available(iOS, introduced: 11.4)
@@ -901,19 +904,19 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case esAG = "es_AG"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esAI = "es_AI"
 
         @available(iOS, introduced: 11.4)
         case esAR = "es_AR"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esAW = "es_AW"
 
         @available(iOS, introduced: 11.4)
         case esBB = "es_BB"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esBL = "es_BL"
 
         @available(iOS, introduced: 11.4)
@@ -967,19 +970,19 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case esES = "es_ES"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esFK = "es_FK"
 
         @available(iOS, introduced: 11.4)
         case esGD = "es_GD"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esGF = "es_GF"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esGL = "es_GL"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esGP = "es_GP"
 
         @available(iOS, introduced: 11.4)
@@ -1009,13 +1012,13 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case esLC = "es_LC"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esMF = "es_MF"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esMQ = "es_MQ"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esMS = "es_MS"
 
         @available(iOS, introduced: 11.4)
@@ -1033,7 +1036,7 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case esPH = "es_PH"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esPM = "es_PM"
 
         @available(iOS, introduced: 11.4)
@@ -1042,13 +1045,13 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case esPY = "es_PY"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esSR = "es_SR"
 
         @available(iOS, introduced: 11.4)
         case esSV = "es_SV"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case esSX = "es_SX"
 
         @available(iOS, introduced: 11.4)
@@ -1333,6 +1336,9 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case ga = "ga"
 
+        @available(iOS, introduced: 14.0)
+        case gaGB = "ga_GB"
+
         @available(iOS, introduced: 11.4)
         case gaIE = "ga_IE"
 
@@ -1431,6 +1437,9 @@ extension Locale {
 
         @available(iOS, introduced: 13.1)
         case hiLatn = "hi_Latn"
+
+        @available(iOS, introduced: 14.0)
+        case hiLatnIN = "hi_Latn_IN"
 
         @available(iOS, introduced: 11.4)
         case hr = "hr"
@@ -1678,7 +1687,10 @@ extension Locale {
         @available(iOS, introduced: 13.0)
         case ksDeva = "ks_Deva"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 14.0)
+        case ksDevaIN = "ks_Deva_IN"
+
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case ksIN = "ks_IN"
 
         @available(iOS, introduced: 11.4)
@@ -2101,10 +2113,10 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case paArabPK = "pa_Arab_PK"
 
-        @available(iOS, introduced: 13.0)
+        @available(iOS, introduced: 13.0, deprecated: 13.8)
         case paAran = "pa_Aran"
 
-        @available(iOS, introduced: 13.0)
+        @available(iOS, introduced: 13.0, deprecated: 13.8)
         case paAranPK = "pa_Aran_PK"
 
         @available(iOS, introduced: 11.4)
@@ -2298,6 +2310,9 @@ extension Locale {
 
         @available(iOS, introduced: 13.0)
         case sdDeva = "sd_Deva"
+
+        @available(iOS, introduced: 14.0)
+        case sdDevaIN = "sd_Deva_IN"
 
         @available(iOS, introduced: 13.0)
         case sdPK = "sd_PK"
@@ -2635,16 +2650,16 @@ extension Locale {
         @available(iOS, introduced: 13.0)
         case urAran = "ur_Aran"
 
-        @available(iOS, introduced: 13.0)
+        @available(iOS, introduced: 13.0, deprecated: 13.8)
         case urAranIN = "ur_Aran_IN"
 
-        @available(iOS, introduced: 13.0)
+        @available(iOS, introduced: 13.0, deprecated: 13.8)
         case urAranPK = "ur_Aran_PK"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case urIN = "ur_IN"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 13.8)
         case urPK = "ur_PK"
 
         @available(iOS, introduced: 11.4)
@@ -2725,7 +2740,7 @@ extension Locale {
         @available(iOS, introduced: 12.0)
         case woSN = "wo_SN"
 
-        @available(iOS, introduced: 13.0)
+        @available(iOS, introduced: 13.0, deprecated: 13.8)
         case wuu = "wuu"
 
         @available(iOS, introduced: 13.0)
