@@ -9,8 +9,11 @@
 
 System module with CaseIterable.
 
+- CoreImage
+  - CIFilter
 - Foundation
   - Locale
+  - TimeZone
 - UIKit
   - UIFont
 
