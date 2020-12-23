@@ -15,7 +15,7 @@ import re
 from distutils.version import StrictVersion
 
 min_version = StrictVersion("11.4")
-max_version = StrictVersion("14.2")
+max_version = StrictVersion("14.3")
 
 
 def convert(one_string, remove_prefix=""):
