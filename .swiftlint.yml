@@ -1,8 +1,14 @@
 disabled_rules:
+  - nesting
   - trailing_comma
 
 excluded:
+  - Example/Carthage
   - Example/Pods
+
+included:
+  - CaseIterable
+  - Example
 
 line_length:
   ignores_comments: true
