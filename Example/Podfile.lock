@@ -1,5 +1,5 @@
 PODS:
-  - CaseIterable (0.8.0)
+  - CaseIterable (0.9.0)
   - DeviceKit (3.0.0)
 
 DEPENDENCIES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CaseIterable: 4f082dcc0a52c02e607c37a9b67dc0bd237c996a
+  CaseIterable: 5499504dd04df72f2044a808d76d2c69e84224fc
   DeviceKit: fc3c2bd361a8d68d8a91eb715e453aede57317e5
 
 PODFILE CHECKSUM: 93b8d3c45bf87d0d35bfac85dfe88b8905ce2e2c
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.2

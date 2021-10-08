@@ -301,16 +301,16 @@ extension UIFont {
         @available(iOS, introduced: 11.4)
         case copperplateLight = "Copperplate-Light"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 14.6)
         case courier = "Courier"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 14.6)
         case courierBold = "Courier-Bold"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 14.6)
         case courierBoldOblique = "Courier-BoldOblique"
 
-        @available(iOS, introduced: 11.4)
+        @available(iOS, introduced: 11.4, deprecated: 14.6)
         case courierOblique = "Courier-Oblique"
 
         @available(iOS, introduced: 11.4)
