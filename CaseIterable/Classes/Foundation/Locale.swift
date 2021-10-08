@@ -31,6 +31,12 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case agqCM = "agq_CM"
 
+        @available(iOS, introduced: 15.0)
+        case ain = "ain"
+
+        @available(iOS, introduced: 15.0)
+        case ainJP = "ain_JP"
+
         @available(iOS, introduced: 11.4)
         case ak = "ak"
 
@@ -387,6 +393,12 @@ extension Locale {
 
         @available(iOS, introduced: 11.4)
         case djeNE = "dje_NE"
+
+        @available(iOS, introduced: 15.0)
+        case doi = "doi"
+
+        @available(iOS, introduced: 15.0)
+        case doiIN = "doi_IN"
 
         @available(iOS, introduced: 11.4)
         case dsb = "dsb"
@@ -898,6 +910,9 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case es = "es"
 
+        @available(iOS, introduced: 15.0)
+        case es003 = "es_003"
+
         @available(iOS, introduced: 11.4)
         case es419 = "es_419"
 
@@ -1107,6 +1122,45 @@ extension Locale {
 
         @available(iOS, introduced: 11.4)
         case ff = "ff"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlm = "ff_Adlm"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmBF = "ff_Adlm_BF"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmCM = "ff_Adlm_CM"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmGH = "ff_Adlm_GH"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmGM = "ff_Adlm_GM"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmGN = "ff_Adlm_GN"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmGW = "ff_Adlm_GW"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmLR = "ff_Adlm_LR"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmMR = "ff_Adlm_MR"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmNE = "ff_Adlm_NE"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmNG = "ff_Adlm_NG"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmSL = "ff_Adlm_SL"
+
+        @available(iOS, introduced: 15.0)
+        case ffAdlmSN = "ff_Adlm_SN"
 
         @available(iOS, introduced: 11.4, deprecated: 12.5)
         case ffCM = "ff_CM"
@@ -1813,6 +1867,12 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case lvLV = "lv_LV"
 
+        @available(iOS, introduced: 15.0)
+        case mai = "mai"
+
+        @available(iOS, introduced: 15.0)
+        case maiIN = "mai_IN"
+
         @available(iOS, introduced: 11.4)
         case mas = "mas"
 
@@ -1920,6 +1980,9 @@ extension Locale {
 
         @available(iOS, introduced: 11.4)
         case msBN = "ms_BN"
+
+        @available(iOS, introduced: 15.0)
+        case msID = "ms_ID"
 
         @available(iOS, introduced: 11.4)
         case msMY = "ms_MY"
@@ -2062,6 +2125,12 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case nusSS = "nus_SS"
 
+        @available(iOS, introduced: 15.0)
+        case nv = "nv"
+
+        @available(iOS, introduced: 15.0)
+        case nvUS = "nv_US"
+
         @available(iOS, introduced: 13.0)
         case ny = "ny"
 
@@ -2124,6 +2193,12 @@ extension Locale {
 
         @available(iOS, introduced: 11.4)
         case paGuruIN = "pa_Guru_IN"
+
+        @available(iOS, introduced: 15.0)
+        case pcm = "pcm"
+
+        @available(iOS, introduced: 15.0)
+        case pcmNG = "pcm_NG"
 
         @available(iOS, introduced: 11.4)
         case pl = "pl"
@@ -2193,6 +2268,18 @@ extension Locale {
 
         @available(iOS, introduced: 11.4)
         case quPE = "qu_PE"
+
+        @available(iOS, introduced: 15.0)
+        case rhg = "rhg"
+
+        @available(iOS, introduced: 15.0)
+        case rhgRohg = "rhg_Rohg"
+
+        @available(iOS, introduced: 15.0)
+        case rhgRohgBD = "rhg_Rohg_BD"
+
+        @available(iOS, introduced: 15.0)
+        case rhgRohgMM = "rhg_Rohg_MM"
 
         @available(iOS, introduced: 11.4)
         case rm = "rm"
@@ -2308,13 +2395,19 @@ extension Locale {
         @available(iOS, introduced: 13.0)
         case sd = "sd"
 
+        @available(iOS, introduced: 15.0)
+        case sdArab = "sd_Arab"
+
+        @available(iOS, introduced: 15.0)
+        case sdArabPK = "sd_Arab_PK"
+
         @available(iOS, introduced: 13.0)
         case sdDeva = "sd_Deva"
 
         @available(iOS, introduced: 14.0)
         case sdDevaIN = "sd_Deva_IN"
 
-        @available(iOS, introduced: 13.0)
+        @available(iOS, introduced: 13.0, deprecated: 14.6)
         case sdPK = "sd_PK"
 
         @available(iOS, introduced: 11.4)
@@ -2469,6 +2562,15 @@ extension Locale {
 
         @available(iOS, introduced: 13.0)
         case stZA = "st_ZA"
+
+        @available(iOS, introduced: 15.0)
+        case su = "su"
+
+        @available(iOS, introduced: 15.0)
+        case suLatn = "su_Latn"
+
+        @available(iOS, introduced: 15.0)
+        case suLatnID = "su_Latn_ID"
 
         @available(iOS, introduced: 11.4)
         case sv = "sv"
