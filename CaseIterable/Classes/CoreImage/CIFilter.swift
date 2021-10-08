@@ -202,6 +202,21 @@ extension CIFilter {
         @available(iOS, introduced: 11.4)
         case convolution9Vertical = "CIConvolution9Vertical"
 
+        @available(iOS, introduced: 15.0)
+        case convolutionRGB3X3 = "CIConvolutionRGB3X3"
+
+        @available(iOS, introduced: 15.0)
+        case convolutionRGB5X5 = "CIConvolutionRGB5X5"
+
+        @available(iOS, introduced: 15.0)
+        case convolutionRGB7X7 = "CIConvolutionRGB7X7"
+
+        @available(iOS, introduced: 15.0)
+        case convolutionRGB9Horizontal = "CIConvolutionRGB9Horizontal"
+
+        @available(iOS, introduced: 15.0)
+        case convolutionRGB9Vertical = "CIConvolutionRGB9Vertical"
+
         @available(iOS, introduced: 11.4)
         case copyMachineTransition = "CICopyMachineTransition"
 
@@ -394,6 +409,9 @@ extension CIFilter {
         @available(iOS, introduced: 11.4)
         case linearGradient = "CILinearGradient"
 
+        @available(iOS, introduced: 15.0)
+        case linearLightBlendMode = "CILinearLightBlendMode"
+
         @available(iOS, introduced: 11.4)
         case linearToSRGBToneCurve = "CILinearToSRGBToneCurve"
 
@@ -486,6 +504,9 @@ extension CIFilter {
 
         @available(iOS, introduced: 11.4)
         case parallelogramTile = "CIParallelogramTile"
+
+        @available(iOS, introduced: 15.0)
+        case personSegmentation = "CIPersonSegmentation"
 
         @available(iOS, introduced: 11.4)
         case perspectiveCorrection = "CIPerspectiveCorrection"
@@ -669,6 +690,9 @@ extension CIFilter {
 
         @available(iOS, introduced: 11.4)
         case vignetteEffect = "CIVignetteEffect"
+
+        @available(iOS, introduced: 15.0)
+        case vividLightBlendMode = "CIVividLightBlendMode"
 
         @available(iOS, introduced: 11.4)
         case vortexDistortion = "CIVortexDistortion"
