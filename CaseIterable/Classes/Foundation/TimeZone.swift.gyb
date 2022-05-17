@@ -29,9 +29,9 @@ extension TimeZone {
 %     deprecated_version = increase_minor_version(max(versions))
 %
 %     if deprecated_version < increase_minor_version(max_version):
-        @available(iOS, introduced: ${introduced_version}, deprecated: ${deprecated_version})
+        @available(iOS, introduced: ${str(introduced_version)}, deprecated: ${str(deprecated_version)})
 %     else:
-        @available(iOS, introduced: ${introduced_version})
+        @available(iOS, introduced: ${str(introduced_version)})
 %     end
         case ${convert(identifier)} = "${identifier}"
 %

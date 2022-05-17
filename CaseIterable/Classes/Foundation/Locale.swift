@@ -1732,7 +1732,7 @@ extension Locale {
         @available(iOS, introduced: 13.0)
         case ksArabIN = "ks_Arab_IN"
 
-        @available(iOS, introduced: 13.0)
+        @available(iOS, introduced: 13.0, deprecated: 15.3)
         case ksAran = "ks_Aran"
 
         @available(iOS, introduced: 13.0)
@@ -2101,6 +2101,9 @@ extension Locale {
         @available(iOS, introduced: 11.4)
         case nnhCM = "nnh_CM"
 
+        @available(iOS, introduced: 15.4)
+        case no = "no"
+
         @available(iOS, introduced: 13.0)
         case nqo = "nqo"
 
@@ -2185,7 +2188,7 @@ extension Locale {
         @available(iOS, introduced: 13.0, deprecated: 13.8)
         case paAran = "pa_Aran"
 
-        @available(iOS, introduced: 13.0, deprecated: 13.8)
+        @available(iOS, introduced: 13.0)
         case paAranPK = "pa_Aran_PK"
 
         @available(iOS, introduced: 11.4)
@@ -2749,13 +2752,13 @@ extension Locale {
         @available(iOS, introduced: 13.0)
         case urArabPK = "ur_Arab_PK"
 
-        @available(iOS, introduced: 13.0)
+        @available(iOS, introduced: 13.0, deprecated: 15.3)
         case urAran = "ur_Aran"
 
         @available(iOS, introduced: 13.0, deprecated: 13.8)
         case urAranIN = "ur_Aran_IN"
 
-        @available(iOS, introduced: 13.0, deprecated: 13.8)
+        @available(iOS, introduced: 13.0)
         case urAranPK = "ur_Aran_PK"
 
         @available(iOS, introduced: 11.4, deprecated: 13.8)
@@ -2910,6 +2913,9 @@ extension Locale {
 
         @available(iOS, introduced: 11.4)
         case zhHansHK = "zh_Hans_HK"
+
+        @available(iOS, introduced: 15.4)
+        case zhHansJP = "zh_Hans_JP"
 
         @available(iOS, introduced: 11.4)
         case zhHansMO = "zh_Hans_MO"

@@ -1261,6 +1261,9 @@ extension TimeZone {
         @available(iOS, introduced: 11.4)
         case pacificJohnston = "Pacific/Johnston"
 
+        @available(iOS, introduced: 12.4)
+        case pacificKanton = "Pacific/Kanton"
+
         @available(iOS, introduced: 11.4)
         case pacificKiritimati = "Pacific/Kiritimati"
 
