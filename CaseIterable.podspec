@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "CaseIterable"
-  s.version = "0.11.0"
+  s.version = "0.12.0"
   s.summary = "System module with CaseIterable."
 
   s.homepage = "https://github.com/nuomi1/CaseIterable"
